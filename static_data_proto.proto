@@ -1,0 +1,24 @@
+syntax = "proto3";
+option java_package = "com.code.server.constant.data";
+option java_outer_classname = "StaticDataProto";
+option csharp_namespace = "com.bsl.data";
+message DataManager {
+	map<string,PaijiuCardGroupData> paijiuCardGroupData = 1;
+	map<string,PaijiuCardGroupScoreData> paijiuCardGroupScoreData = 2;
+	map<string,person> person = 3;
+}
+message PaijiuCardGroupData {
+	string id = 1;
+	string name = 2;
+}
+message PaijiuCardGroupScoreData {
+	string id = 1;
+	string score = 2;
+}
+message person {
+	int32 id = 1;
+	string name = 2;
+	int32 age = 3;
+	repeated int32 exp = 4;
+	map<int32,string> weapon = 5;
+}

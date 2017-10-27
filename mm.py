@@ -106,12 +106,27 @@ def convert_base_type(attr_type, value):
             return value
 
 
-def is_number(num):
+"""
+是否是数字
+"""
+
+
+def is_number(s):
     try:
-        float(num)
+        float(s)
         return True
     except ValueError:
         pass
+
+    try:
+        import unicodedata
+        unicodedata.numeric(s)
+        return True
+    except (TypeError, ValueError):
+        pass
+
+    return False
+
 
 '''
 转换数据

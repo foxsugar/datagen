@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='static_data_proto.proto',
   package='',
   syntax='proto3',
-  serialized_pb=_b('\n\x17static_data_proto.proto\"\xa3\x05\n\x0b\x44\x61taManager\x12\x38\n\x0epaijiuCardData\x18\x01 \x03(\x0b\x32 .DataManager.PaijiuCardDataEntry\x12\x42\n\x13paijiuCardGroupData\x18\x02 \x03(\x0b\x32%.DataManager.PaijiuCardGroupDataEntry\x12L\n\x18paijiuCardGroupScoreData\x18\x03 \x03(\x0b\x32*.DataManager.PaijiuCardGroupScoreDataEntry\x12,\n\x08roomData\x18\x04 \x03(\x0b\x32\x1a.DataManager.RoomDataEntry\x12,\n\x08testData\x18\x05 \x03(\x0b\x32\x1a.DataManager.TestDataEntry\x1a\x46\n\x13PaijiuCardDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x1e\n\x05value\x18\x02 \x01(\x0b\x32\x0f.PaijiuCardData:\x02\x38\x01\x1aP\n\x18PaijiuCardGroupDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12#\n\x05value\x18\x02 \x01(\x0b\x32\x14.PaijiuCardGroupData:\x02\x38\x01\x1aZ\n\x1dPaijiuCardGroupScoreDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12(\n\x05value\x18\x02 \x01(\x0b\x32\x19.PaijiuCardGroupScoreData:\x02\x38\x01\x1a:\n\rRoomDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x18\n\x05value\x18\x02 \x01(\x0b\x32\t.RoomData:\x02\x38\x01\x1a:\n\rTestDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x18\n\x05value\x18\x02 \x01(\x0b\x32\t.TestData:\x02\x38\x01\"*\n\x0ePaijiuCardData\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04\x63\x61rd\x18\x02 \x01(\x05\"/\n\x13PaijiuCardGroupData\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\"5\n\x18PaijiuCardGroupScoreData\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x05\"\xdb\x01\n\x08RoomData\x12\n\n\x02id\x18\x01 \x01(\x05\x12#\n\x05money\x18\x02 \x03(\x0b\x32\x14.RoomData.MoneyEntry\x12+\n\teachMoney\x18\x03 \x03(\x0b\x32\x18.RoomData.EachMoneyEntry\x12\x11\n\tisAddGold\x18\x04 \x01(\x05\x1a,\n\nMoneyEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\x1a\x30\n\x0e\x45\x61\x63hMoneyEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\"\xbd\x02\n\x08TestData\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0b\n\x03\x61ge\x18\x03 \x01(\x05\x12\x0b\n\x03\x65xp\x18\x04 \x03(\x05\x12%\n\x06weapon\x18\x05 \x03(\x0b\x32\x15.TestData.WeaponEntry\x12\x10\n\x08testLong\x18\x06 \x01(\x03\x12\x12\n\ntestDouble\x18\x07 \x01(\x01\x12\x16\n\x0etestListDouble\x18\x08 \x03(\x01\x12\x33\n\rtestMapDouble\x18\t \x03(\x0b\x32\x1c.TestData.TestMapDoubleEntry\x1a-\n\x0bWeaponEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a\x34\n\x12TestMapDoubleEntry\x12\x0b\n\x03key\x18\x01 \x01(\x03\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\x42?\n\x1d\x63om.code.server.constant.dataB\x0fStaticDataProto\xaa\x02\x0c\x63om.bsl.datab\x06proto3')
+  serialized_pb=_b('\n\x17static_data_proto.proto\"\xa3\x05\n\x0b\x44\x61taManager\x12\x38\n\x0epaijiuCardData\x18\x01 \x03(\x0b\x32 .DataManager.PaijiuCardDataEntry\x12\x42\n\x13paijiuCardGroupData\x18\x02 \x03(\x0b\x32%.DataManager.PaijiuCardGroupDataEntry\x12L\n\x18paijiuCardGroupScoreData\x18\x03 \x03(\x0b\x32*.DataManager.PaijiuCardGroupScoreDataEntry\x12,\n\x08roomData\x18\x04 \x03(\x0b\x32\x1a.DataManager.RoomDataEntry\x12,\n\x08testData\x18\x05 \x03(\x0b\x32\x1a.DataManager.TestDataEntry\x1a\x46\n\x13PaijiuCardDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x1e\n\x05value\x18\x02 \x01(\x0b\x32\x0f.PaijiuCardData:\x02\x38\x01\x1aP\n\x18PaijiuCardGroupDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12#\n\x05value\x18\x02 \x01(\x0b\x32\x14.PaijiuCardGroupData:\x02\x38\x01\x1aZ\n\x1dPaijiuCardGroupScoreDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12(\n\x05value\x18\x02 \x01(\x0b\x32\x19.PaijiuCardGroupScoreData:\x02\x38\x01\x1a:\n\rRoomDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x18\n\x05value\x18\x02 \x01(\x0b\x32\t.RoomData:\x02\x38\x01\x1a:\n\rTestDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x18\n\x05value\x18\x02 \x01(\x0b\x32\t.TestData:\x02\x38\x01\"*\n\x0ePaijiuCardData\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04\x63\x61rd\x18\x02 \x01(\x05\"/\n\x13PaijiuCardGroupData\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\"5\n\x18PaijiuCardGroupScoreData\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x05\"\xf1\x01\n\x08RoomData\x12\n\n\x02id\x18\x01 \x01(\t\x12#\n\x05money\x18\x02 \x03(\x0b\x32\x14.RoomData.MoneyEntry\x12+\n\teachMoney\x18\x03 \x03(\x0b\x32\x18.RoomData.EachMoneyEntry\x12\x11\n\tisAddGold\x18\x04 \x01(\x05\x12\x14\n\x0cinstanceName\x18\x05 \x01(\t\x1a,\n\nMoneyEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\x1a\x30\n\x0e\x45\x61\x63hMoneyEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\"\xbd\x02\n\x08TestData\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0b\n\x03\x61ge\x18\x03 \x01(\x05\x12\x0b\n\x03\x65xp\x18\x04 \x03(\x05\x12%\n\x06weapon\x18\x05 \x03(\x0b\x32\x15.TestData.WeaponEntry\x12\x10\n\x08testLong\x18\x06 \x01(\x03\x12\x12\n\ntestDouble\x18\x07 \x01(\x01\x12\x16\n\x0etestListDouble\x18\x08 \x03(\x01\x12\x33\n\rtestMapDouble\x18\t \x03(\x0b\x32\x1c.TestData.TestMapDoubleEntry\x1a-\n\x0bWeaponEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a\x34\n\x12TestMapDoubleEntry\x12\x0b\n\x03key\x18\x01 \x01(\x03\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\x42?\n\x1d\x63om.code.server.constant.dataB\x0fStaticDataProto\xaa\x02\x0c\x63om.bsl.datab\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -146,8 +146,8 @@ _DATAMANAGER_ROOMDATAENTRY = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='key', full_name='DataManager.RoomDataEntry.key', index=0,
-      number=1, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -417,8 +417,8 @@ _ROOMDATA_MONEYENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=979,
-  serialized_end=1023,
+  serialized_start=1001,
+  serialized_end=1045,
 )
 
 _ROOMDATA_EACHMONEYENTRY = _descriptor.Descriptor(
@@ -454,8 +454,8 @@ _ROOMDATA_EACHMONEYENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1025,
-  serialized_end=1073,
+  serialized_start=1047,
+  serialized_end=1095,
 )
 
 _ROOMDATA = _descriptor.Descriptor(
@@ -467,8 +467,8 @@ _ROOMDATA = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='id', full_name='RoomData.id', index=0,
-      number=1, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -493,6 +493,13 @@ _ROOMDATA = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='instanceName', full_name='RoomData.instanceName', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -506,7 +513,7 @@ _ROOMDATA = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=854,
-  serialized_end=1073,
+  serialized_end=1095,
 )
 
 
@@ -543,8 +550,8 @@ _TESTDATA_WEAPONENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1294,
-  serialized_end=1339,
+  serialized_start=1316,
+  serialized_end=1361,
 )
 
 _TESTDATA_TESTMAPDOUBLEENTRY = _descriptor.Descriptor(
@@ -580,8 +587,8 @@ _TESTDATA_TESTMAPDOUBLEENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1341,
-  serialized_end=1393,
+  serialized_start=1363,
+  serialized_end=1415,
 )
 
 _TESTDATA = _descriptor.Descriptor(
@@ -666,8 +673,8 @@ _TESTDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1076,
-  serialized_end=1393,
+  serialized_start=1098,
+  serialized_end=1415,
 )
 
 _DATAMANAGER_PAIJIUCARDDATAENTRY.fields_by_name['value'].message_type = _PAIJIUCARDDATA

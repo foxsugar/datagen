@@ -6,6 +6,7 @@ import python_out.static_data_proto_pb2
 import importlib, sys
 import google.protobuf.json_format
 import json
+import types
 
 importlib.reload(sys)
 # sys.setdefaultencoding("utf8")
@@ -99,8 +100,18 @@ def convert_base_type(attr_type, value):
     elif attr_type == "float":
         return float(value)
     elif attr_type == "string":
-        return value
+        if is_number(value):
+            return str(int(float(value)))
+        else:
+            return value
 
+
+def is_number(num):
+    try:
+        float(num)
+        return True
+    except ValueError:
+        pass
 
 '''
 转换数据
@@ -157,6 +168,8 @@ def init(obj, args_build_type, args_names, args_types, arg_values):
 '''
 将序列化的数据写入文件
 '''
+
+
 def write_data_to_file():
     manager = python_out.static_data_proto_pb2.DataManager()
     inputs = os.listdir(in_dir)
@@ -166,16 +179,18 @@ def write_data_to_file():
         wb = xlrd.open_workbook(in_dir + f)
         sheet = wb.sheets()[0]
         id_type = str(sheet.col_values(0)[2]).strip()
-        #真正数据从第三行开始
+        # 真正数据从第三行开始
         for r in range(3, sheet.nrows):
             row = sheet.row_values(r)
             fn = f.split(".")[0]
             data_name = fn[0].lower() + fn[1:]
             id_value = str(row[0]).strip()
-            print((" data_name: "+ data_name+"  =====id: " + id_value))
-            attr = getattr(manager, data_name)[convert_base_type(id_type, id_value)]
+            print((" data_name: " + data_name + "  =====id: " + id_value))
+            v = convert_base_type(id_type, id_value)
+            attr = getattr(manager, data_name)[v]
             init(attr, sheet.row_values(0), sheet.row_values(1), sheet.row_values(2), row)
             # func(getattr(manager, f[:-4] + "Record")[r - 3], row)
+    print("生成数据")
     out_json = open(get_config("build", "out_path") + "/static_data.json", "w+", encoding="utf-8")
     out_bin = open(get_config("build", "out_path") + "/static_data.data", "wb+")
 

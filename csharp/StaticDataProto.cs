@@ -35,26 +35,27 @@ namespace com.bsl.data {
             "EiMKBXZhbHVlGAIgASgLMhQuUGFpaml1Q2FyZEdyb3VwRGF0YToCOAEaWgod",
             "UGFpaml1Q2FyZEdyb3VwU2NvcmVEYXRhRW50cnkSCwoDa2V5GAEgASgJEigK",
             "BXZhbHVlGAIgASgLMhkuUGFpaml1Q2FyZEdyb3VwU2NvcmVEYXRhOgI4ARo6",
-            "Cg1Sb29tRGF0YUVudHJ5EgsKA2tleRgBIAEoBRIYCgV2YWx1ZRgCIAEoCzIJ",
+            "Cg1Sb29tRGF0YUVudHJ5EgsKA2tleRgBIAEoCRIYCgV2YWx1ZRgCIAEoCzIJ",
             "LlJvb21EYXRhOgI4ARo6Cg1UZXN0RGF0YUVudHJ5EgsKA2tleRgBIAEoBRIY",
             "CgV2YWx1ZRgCIAEoCzIJLlRlc3REYXRhOgI4ASIqCg5QYWlqaXVDYXJkRGF0",
             "YRIKCgJpZBgBIAEoBRIMCgRjYXJkGAIgASgFIi8KE1BhaWppdUNhcmRHcm91",
             "cERhdGESCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCSI1ChhQYWlqaXVDYXJk",
-            "R3JvdXBTY29yZURhdGESCgoCaWQYASABKAkSDQoFc2NvcmUYAiABKAUi2wEK",
-            "CFJvb21EYXRhEgoKAmlkGAEgASgFEiMKBW1vbmV5GAIgAygLMhQuUm9vbURh",
+            "R3JvdXBTY29yZURhdGESCgoCaWQYASABKAkSDQoFc2NvcmUYAiABKAUi8QEK",
+            "CFJvb21EYXRhEgoKAmlkGAEgASgJEiMKBW1vbmV5GAIgAygLMhQuUm9vbURh",
             "dGEuTW9uZXlFbnRyeRIrCgllYWNoTW9uZXkYAyADKAsyGC5Sb29tRGF0YS5F",
-            "YWNoTW9uZXlFbnRyeRIRCglpc0FkZEdvbGQYBCABKAUaLAoKTW9uZXlFbnRy",
-            "eRILCgNrZXkYASABKAUSDQoFdmFsdWUYAiABKAU6AjgBGjAKDkVhY2hNb25l",
-            "eUVudHJ5EgsKA2tleRgBIAEoBRINCgV2YWx1ZRgCIAEoBToCOAEivQIKCFRl",
-            "c3REYXRhEgoKAmlkGAEgASgFEgwKBG5hbWUYAiABKAkSCwoDYWdlGAMgASgF",
-            "EgsKA2V4cBgEIAMoBRIlCgZ3ZWFwb24YBSADKAsyFS5UZXN0RGF0YS5XZWFw",
-            "b25FbnRyeRIQCgh0ZXN0TG9uZxgGIAEoAxISCgp0ZXN0RG91YmxlGAcgASgB",
-            "EhYKDnRlc3RMaXN0RG91YmxlGAggAygBEjMKDXRlc3RNYXBEb3VibGUYCSAD",
-            "KAsyHC5UZXN0RGF0YS5UZXN0TWFwRG91YmxlRW50cnkaLQoLV2VhcG9uRW50",
-            "cnkSCwoDa2V5GAEgASgFEg0KBXZhbHVlGAIgASgJOgI4ARo0ChJUZXN0TWFw",
-            "RG91YmxlRW50cnkSCwoDa2V5GAEgASgDEg0KBXZhbHVlGAIgASgBOgI4AUI/",
-            "Ch1jb20uY29kZS5zZXJ2ZXIuY29uc3RhbnQuZGF0YUIPU3RhdGljRGF0YVBy",
-            "b3RvqgIMY29tLmJzbC5kYXRhYgZwcm90bzM="));
+            "YWNoTW9uZXlFbnRyeRIRCglpc0FkZEdvbGQYBCABKAUSFAoMaW5zdGFuY2VO",
+            "YW1lGAUgASgJGiwKCk1vbmV5RW50cnkSCwoDa2V5GAEgASgFEg0KBXZhbHVl",
+            "GAIgASgFOgI4ARowCg5FYWNoTW9uZXlFbnRyeRILCgNrZXkYASABKAUSDQoF",
+            "dmFsdWUYAiABKAU6AjgBIr0CCghUZXN0RGF0YRIKCgJpZBgBIAEoBRIMCgRu",
+            "YW1lGAIgASgJEgsKA2FnZRgDIAEoBRILCgNleHAYBCADKAUSJQoGd2VhcG9u",
+            "GAUgAygLMhUuVGVzdERhdGEuV2VhcG9uRW50cnkSEAoIdGVzdExvbmcYBiAB",
+            "KAMSEgoKdGVzdERvdWJsZRgHIAEoARIWCg50ZXN0TGlzdERvdWJsZRgIIAMo",
+            "ARIzCg10ZXN0TWFwRG91YmxlGAkgAygLMhwuVGVzdERhdGEuVGVzdE1hcERv",
+            "dWJsZUVudHJ5Gi0KC1dlYXBvbkVudHJ5EgsKA2tleRgBIAEoBRINCgV2YWx1",
+            "ZRgCIAEoCToCOAEaNAoSVGVzdE1hcERvdWJsZUVudHJ5EgsKA2tleRgBIAEo",
+            "AxINCgV2YWx1ZRgCIAEoAToCOAFCPwodY29tLmNvZGUuc2VydmVyLmNvbnN0",
+            "YW50LmRhdGFCD1N0YXRpY0RhdGFQcm90b6oCDGNvbS5ic2wuZGF0YWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -62,7 +63,7 @@ namespace com.bsl.data {
             new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.PaijiuCardData), global::com.bsl.data.PaijiuCardData.Parser, new[]{ "Id", "Card" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.PaijiuCardGroupData), global::com.bsl.data.PaijiuCardGroupData.Parser, new[]{ "Id", "Name" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.PaijiuCardGroupScoreData), global::com.bsl.data.PaijiuCardGroupScoreData.Parser, new[]{ "Id", "Score" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.RoomData), global::com.bsl.data.RoomData.Parser, new[]{ "Id", "Money", "EachMoney", "IsAddGold" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.RoomData), global::com.bsl.data.RoomData.Parser, new[]{ "Id", "Money", "EachMoney", "IsAddGold", "InstanceName" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.TestData), global::com.bsl.data.TestData.Parser, new[]{ "Id", "Name", "Age", "Exp", "Weapon", "TestLong", "TestDouble", "TestListDouble", "TestMapDouble" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
@@ -138,11 +139,11 @@ namespace com.bsl.data {
 
     /// <summary>Field number for the "roomData" field.</summary>
     public const int RoomDataFieldNumber = 4;
-    private static readonly pbc::MapField<int, global::com.bsl.data.RoomData>.Codec _map_roomData_codec
-        = new pbc::MapField<int, global::com.bsl.data.RoomData>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForMessage(18, global::com.bsl.data.RoomData.Parser), 34);
-    private readonly pbc::MapField<int, global::com.bsl.data.RoomData> roomData_ = new pbc::MapField<int, global::com.bsl.data.RoomData>();
+    private static readonly pbc::MapField<string, global::com.bsl.data.RoomData>.Codec _map_roomData_codec
+        = new pbc::MapField<string, global::com.bsl.data.RoomData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.RoomData.Parser), 34);
+    private readonly pbc::MapField<string, global::com.bsl.data.RoomData> roomData_ = new pbc::MapField<string, global::com.bsl.data.RoomData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::MapField<int, global::com.bsl.data.RoomData> RoomData {
+    public pbc::MapField<string, global::com.bsl.data.RoomData> RoomData {
       get { return roomData_; }
     }
 
@@ -722,6 +723,7 @@ namespace com.bsl.data {
       money_ = other.money_.Clone();
       eachMoney_ = other.eachMoney_.Clone();
       isAddGold_ = other.isAddGold_;
+      instanceName_ = other.instanceName_;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -731,12 +733,12 @@ namespace com.bsl.data {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private int id_;
+    private string id_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
+    public string Id {
       get { return id_; }
       set {
-        id_ = value;
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -771,6 +773,17 @@ namespace com.bsl.data {
       }
     }
 
+    /// <summary>Field number for the "instanceName" field.</summary>
+    public const int InstanceNameFieldNumber = 5;
+    private string instanceName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string InstanceName {
+      get { return instanceName_; }
+      set {
+        instanceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RoomData);
@@ -788,16 +801,18 @@ namespace com.bsl.data {
       if (!Money.Equals(other.Money)) return false;
       if (!EachMoney.Equals(other.EachMoney)) return false;
       if (IsAddGold != other.IsAddGold) return false;
+      if (InstanceName != other.InstanceName) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
       hash ^= Money.GetHashCode();
       hash ^= EachMoney.GetHashCode();
       if (IsAddGold != 0) hash ^= IsAddGold.GetHashCode();
+      if (InstanceName.Length != 0) hash ^= InstanceName.GetHashCode();
       return hash;
     }
 
@@ -808,9 +823,9 @@ namespace com.bsl.data {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
       }
       money_.WriteTo(output, _map_money_codec);
       eachMoney_.WriteTo(output, _map_eachMoney_codec);
@@ -818,18 +833,25 @@ namespace com.bsl.data {
         output.WriteRawTag(32);
         output.WriteInt32(IsAddGold);
       }
+      if (InstanceName.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(InstanceName);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
       }
       size += money_.CalculateSize(_map_money_codec);
       size += eachMoney_.CalculateSize(_map_eachMoney_codec);
       if (IsAddGold != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsAddGold);
+      }
+      if (InstanceName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstanceName);
       }
       return size;
     }
@@ -839,13 +861,16 @@ namespace com.bsl.data {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
+      if (other.Id.Length != 0) {
         Id = other.Id;
       }
       money_.Add(other.money_);
       eachMoney_.Add(other.eachMoney_);
       if (other.IsAddGold != 0) {
         IsAddGold = other.IsAddGold;
+      }
+      if (other.InstanceName.Length != 0) {
+        InstanceName = other.InstanceName;
       }
     }
 
@@ -857,8 +882,8 @@ namespace com.bsl.data {
           default:
             input.SkipLastField();
             break;
-          case 8: {
-            Id = input.ReadInt32();
+          case 10: {
+            Id = input.ReadString();
             break;
           }
           case 18: {
@@ -871,6 +896,10 @@ namespace com.bsl.data {
           }
           case 32: {
             IsAddGold = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            InstanceName = input.ReadString();
             break;
           }
         }

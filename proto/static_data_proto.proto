@@ -7,7 +7,7 @@ message DataManager {
 	map<int32,PaijiuCardData> paijiuCardData = 1;
 	map<string,PaijiuCardGroupData> paijiuCardGroupData = 2;
 	map<string,PaijiuCardGroupScoreData> paijiuCardGroupScoreData = 3;
-	map<int32,RoomData> roomData = 4;
+	map<string,RoomData> roomData = 4;
 	map<int32,TestData> testData = 5;
 }
 message PaijiuCardData {
@@ -23,10 +23,11 @@ message PaijiuCardGroupScoreData {
 	int32 score = 2;
 }
 message RoomData {
-	int32 id = 1;
+	string id = 1;
 	map<int32,int32> money = 2;
 	map<int32,int32> eachMoney = 3;
 	int32 isAddGold = 4;
+	string instanceName = 5;
 }
 message TestData {
 	int32 id = 1;

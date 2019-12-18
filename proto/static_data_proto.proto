@@ -4,11 +4,33 @@ option java_outer_classname = "StaticDataProto";
 option csharp_namespace = "com.bsl.data";
 
 message DataManager {
-	map<int32,PaijiuCardData> paijiuCardData = 1;
-	map<string,PaijiuCardGroupData> paijiuCardGroupData = 2;
-	map<string,PaijiuCardGroupScoreData> paijiuCardGroupScoreData = 3;
-	map<string,RoomData> roomData = 4;
-	map<int32,TestData> testData = 5;
+	map<string,CrazyPaijiuCardGroupData> crazyPaijiuCardGroupData = 1;
+	map<string,CrazyPaijiuCardGroupScoreData> crazyPaijiuCardGroupScoreData = 2;
+	map<string,LaotiePaijiuCardGroupData> laotiePaijiuCardGroupData = 3;
+	map<string,LaotiePaijiuCardGroupScoreData> laotiePaijiuCardGroupScoreData = 4;
+	map<int32,PaijiuCardData> paijiuCardData = 5;
+	map<string,PaijiuCardGroupData> paijiuCardGroupData = 6;
+	map<string,PaijiuCardGroupScoreData> paijiuCardGroupScoreData = 7;
+	map<string,RoomData> roomData = 8;
+	map<int32,TestData> testData = 9;
+	map<string,XiaoyaoPaijiuCardGroupData> xiaoyaoPaijiuCardGroupData = 10;
+	map<string,XiaoyaoPaijiuCardGroupScoreData> xiaoyaoPaijiuCardGroupScoreData = 11;
+}
+message CrazyPaijiuCardGroupData {
+	string id = 1;
+	string name = 2;
+}
+message CrazyPaijiuCardGroupScoreData {
+	string id = 1;
+	int32 score = 2;
+}
+message LaotiePaijiuCardGroupData {
+	string id = 1;
+	string name = 2;
+}
+message LaotiePaijiuCardGroupScoreData {
+	string id = 1;
+	int32 score = 2;
 }
 message PaijiuCardData {
 	int32 id = 1;
@@ -25,9 +47,15 @@ message PaijiuCardGroupScoreData {
 message RoomData {
 	string id = 1;
 	map<int32,int32> money = 2;
-	map<int32,int32> eachMoney = 3;
-	int32 isAddGold = 4;
-	string instanceName = 5;
+	double maxBet = 3;
+	map<int32,int32> eachMoney = 4;
+	int32 isAddGold = 5;
+	int32 isWinner2Dizhu = 6;
+	string paijiuDataName = 7;
+	map<int32,int32> enterGold = 8;
+	map<int32,int32> outGold = 9;
+	int32 rebate = 10;
+	string instanceName = 11;
 }
 message TestData {
 	int32 id = 1;
@@ -39,4 +67,12 @@ message TestData {
 	double testDouble = 7;
 	repeated double testListDouble = 8;
 	map<int64,double> testMapDouble = 9;
+}
+message XiaoyaoPaijiuCardGroupData {
+	string id = 1;
+	string name = 2;
+}
+message XiaoyaoPaijiuCardGroupScoreData {
+	string id = 1;
+	int32 score = 2;
 }

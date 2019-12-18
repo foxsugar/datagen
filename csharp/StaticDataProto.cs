@@ -22,49 +22,93 @@ namespace com.bsl.data {
     static StaticDataProtoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdzdGF0aWNfZGF0YV9wcm90by5wcm90byKjBQoLRGF0YU1hbmFnZXISOAoO",
-            "cGFpaml1Q2FyZERhdGEYASADKAsyIC5EYXRhTWFuYWdlci5QYWlqaXVDYXJk",
-            "RGF0YUVudHJ5EkIKE3BhaWppdUNhcmRHcm91cERhdGEYAiADKAsyJS5EYXRh",
-            "TWFuYWdlci5QYWlqaXVDYXJkR3JvdXBEYXRhRW50cnkSTAoYcGFpaml1Q2Fy",
-            "ZEdyb3VwU2NvcmVEYXRhGAMgAygLMiouRGF0YU1hbmFnZXIuUGFpaml1Q2Fy",
-            "ZEdyb3VwU2NvcmVEYXRhRW50cnkSLAoIcm9vbURhdGEYBCADKAsyGi5EYXRh",
-            "TWFuYWdlci5Sb29tRGF0YUVudHJ5EiwKCHRlc3REYXRhGAUgAygLMhouRGF0",
-            "YU1hbmFnZXIuVGVzdERhdGFFbnRyeRpGChNQYWlqaXVDYXJkRGF0YUVudHJ5",
-            "EgsKA2tleRgBIAEoBRIeCgV2YWx1ZRgCIAEoCzIPLlBhaWppdUNhcmREYXRh",
-            "OgI4ARpQChhQYWlqaXVDYXJkR3JvdXBEYXRhRW50cnkSCwoDa2V5GAEgASgJ",
-            "EiMKBXZhbHVlGAIgASgLMhQuUGFpaml1Q2FyZEdyb3VwRGF0YToCOAEaWgod",
-            "UGFpaml1Q2FyZEdyb3VwU2NvcmVEYXRhRW50cnkSCwoDa2V5GAEgASgJEigK",
-            "BXZhbHVlGAIgASgLMhkuUGFpaml1Q2FyZEdyb3VwU2NvcmVEYXRhOgI4ARo6",
-            "Cg1Sb29tRGF0YUVudHJ5EgsKA2tleRgBIAEoCRIYCgV2YWx1ZRgCIAEoCzIJ",
-            "LlJvb21EYXRhOgI4ARo6Cg1UZXN0RGF0YUVudHJ5EgsKA2tleRgBIAEoBRIY",
-            "CgV2YWx1ZRgCIAEoCzIJLlRlc3REYXRhOgI4ASIqCg5QYWlqaXVDYXJkRGF0",
-            "YRIKCgJpZBgBIAEoBRIMCgRjYXJkGAIgASgFIi8KE1BhaWppdUNhcmRHcm91",
-            "cERhdGESCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCSI1ChhQYWlqaXVDYXJk",
-            "R3JvdXBTY29yZURhdGESCgoCaWQYASABKAkSDQoFc2NvcmUYAiABKAUi8QEK",
-            "CFJvb21EYXRhEgoKAmlkGAEgASgJEiMKBW1vbmV5GAIgAygLMhQuUm9vbURh",
-            "dGEuTW9uZXlFbnRyeRIrCgllYWNoTW9uZXkYAyADKAsyGC5Sb29tRGF0YS5F",
-            "YWNoTW9uZXlFbnRyeRIRCglpc0FkZEdvbGQYBCABKAUSFAoMaW5zdGFuY2VO",
-            "YW1lGAUgASgJGiwKCk1vbmV5RW50cnkSCwoDa2V5GAEgASgFEg0KBXZhbHVl",
-            "GAIgASgFOgI4ARowCg5FYWNoTW9uZXlFbnRyeRILCgNrZXkYASABKAUSDQoF",
-            "dmFsdWUYAiABKAU6AjgBIr0CCghUZXN0RGF0YRIKCgJpZBgBIAEoBRIMCgRu",
-            "YW1lGAIgASgJEgsKA2FnZRgDIAEoBRILCgNleHAYBCADKAUSJQoGd2VhcG9u",
-            "GAUgAygLMhUuVGVzdERhdGEuV2VhcG9uRW50cnkSEAoIdGVzdExvbmcYBiAB",
-            "KAMSEgoKdGVzdERvdWJsZRgHIAEoARIWCg50ZXN0TGlzdERvdWJsZRgIIAMo",
-            "ARIzCg10ZXN0TWFwRG91YmxlGAkgAygLMhwuVGVzdERhdGEuVGVzdE1hcERv",
-            "dWJsZUVudHJ5Gi0KC1dlYXBvbkVudHJ5EgsKA2tleRgBIAEoBRINCgV2YWx1",
-            "ZRgCIAEoCToCOAEaNAoSVGVzdE1hcERvdWJsZUVudHJ5EgsKA2tleRgBIAEo",
-            "AxINCgV2YWx1ZRgCIAEoAToCOAFCPwodY29tLmNvZGUuc2VydmVyLmNvbnN0",
-            "YW50LmRhdGFCD1N0YXRpY0RhdGFQcm90b6oCDGNvbS5ic2wuZGF0YWIGcHJv",
-            "dG8z"));
+            "ChdzdGF0aWNfZGF0YV9wcm90by5wcm90byLzDQoLRGF0YU1hbmFnZXISTAoY",
+            "Y3JhenlQYWlqaXVDYXJkR3JvdXBEYXRhGAEgAygLMiouRGF0YU1hbmFnZXIu",
+            "Q3JhenlQYWlqaXVDYXJkR3JvdXBEYXRhRW50cnkSVgodY3JhenlQYWlqaXVD",
+            "YXJkR3JvdXBTY29yZURhdGEYAiADKAsyLy5EYXRhTWFuYWdlci5DcmF6eVBh",
+            "aWppdUNhcmRHcm91cFNjb3JlRGF0YUVudHJ5Ek4KGWxhb3RpZVBhaWppdUNh",
+            "cmRHcm91cERhdGEYAyADKAsyKy5EYXRhTWFuYWdlci5MYW90aWVQYWlqaXVD",
+            "YXJkR3JvdXBEYXRhRW50cnkSWAoebGFvdGllUGFpaml1Q2FyZEdyb3VwU2Nv",
+            "cmVEYXRhGAQgAygLMjAuRGF0YU1hbmFnZXIuTGFvdGllUGFpaml1Q2FyZEdy",
+            "b3VwU2NvcmVEYXRhRW50cnkSOAoOcGFpaml1Q2FyZERhdGEYBSADKAsyIC5E",
+            "YXRhTWFuYWdlci5QYWlqaXVDYXJkRGF0YUVudHJ5EkIKE3BhaWppdUNhcmRH",
+            "cm91cERhdGEYBiADKAsyJS5EYXRhTWFuYWdlci5QYWlqaXVDYXJkR3JvdXBE",
+            "YXRhRW50cnkSTAoYcGFpaml1Q2FyZEdyb3VwU2NvcmVEYXRhGAcgAygLMiou",
+            "RGF0YU1hbmFnZXIuUGFpaml1Q2FyZEdyb3VwU2NvcmVEYXRhRW50cnkSLAoI",
+            "cm9vbURhdGEYCCADKAsyGi5EYXRhTWFuYWdlci5Sb29tRGF0YUVudHJ5EiwK",
+            "CHRlc3REYXRhGAkgAygLMhouRGF0YU1hbmFnZXIuVGVzdERhdGFFbnRyeRJQ",
+            "Chp4aWFveWFvUGFpaml1Q2FyZEdyb3VwRGF0YRgKIAMoCzIsLkRhdGFNYW5h",
+            "Z2VyLlhpYW95YW9QYWlqaXVDYXJkR3JvdXBEYXRhRW50cnkSWgofeGlhb3lh",
+            "b1BhaWppdUNhcmRHcm91cFNjb3JlRGF0YRgLIAMoCzIxLkRhdGFNYW5hZ2Vy",
+            "LlhpYW95YW9QYWlqaXVDYXJkR3JvdXBTY29yZURhdGFFbnRyeRpaCh1DcmF6",
+            "eVBhaWppdUNhcmRHcm91cERhdGFFbnRyeRILCgNrZXkYASABKAkSKAoFdmFs",
+            "dWUYAiABKAsyGS5DcmF6eVBhaWppdUNhcmRHcm91cERhdGE6AjgBGmQKIkNy",
+            "YXp5UGFpaml1Q2FyZEdyb3VwU2NvcmVEYXRhRW50cnkSCwoDa2V5GAEgASgJ",
+            "Ei0KBXZhbHVlGAIgASgLMh4uQ3JhenlQYWlqaXVDYXJkR3JvdXBTY29yZURh",
+            "dGE6AjgBGlwKHkxhb3RpZVBhaWppdUNhcmRHcm91cERhdGFFbnRyeRILCgNr",
+            "ZXkYASABKAkSKQoFdmFsdWUYAiABKAsyGi5MYW90aWVQYWlqaXVDYXJkR3Jv",
+            "dXBEYXRhOgI4ARpmCiNMYW90aWVQYWlqaXVDYXJkR3JvdXBTY29yZURhdGFF",
+            "bnRyeRILCgNrZXkYASABKAkSLgoFdmFsdWUYAiABKAsyHy5MYW90aWVQYWlq",
+            "aXVDYXJkR3JvdXBTY29yZURhdGE6AjgBGkYKE1BhaWppdUNhcmREYXRhRW50",
+            "cnkSCwoDa2V5GAEgASgFEh4KBXZhbHVlGAIgASgLMg8uUGFpaml1Q2FyZERh",
+            "dGE6AjgBGlAKGFBhaWppdUNhcmRHcm91cERhdGFFbnRyeRILCgNrZXkYASAB",
+            "KAkSIwoFdmFsdWUYAiABKAsyFC5QYWlqaXVDYXJkR3JvdXBEYXRhOgI4ARpa",
+            "Ch1QYWlqaXVDYXJkR3JvdXBTY29yZURhdGFFbnRyeRILCgNrZXkYASABKAkS",
+            "KAoFdmFsdWUYAiABKAsyGS5QYWlqaXVDYXJkR3JvdXBTY29yZURhdGE6AjgB",
+            "GjoKDVJvb21EYXRhRW50cnkSCwoDa2V5GAEgASgJEhgKBXZhbHVlGAIgASgL",
+            "MgkuUm9vbURhdGE6AjgBGjoKDVRlc3REYXRhRW50cnkSCwoDa2V5GAEgASgF",
+            "EhgKBXZhbHVlGAIgASgLMgkuVGVzdERhdGE6AjgBGl4KH1hpYW95YW9QYWlq",
+            "aXVDYXJkR3JvdXBEYXRhRW50cnkSCwoDa2V5GAEgASgJEioKBXZhbHVlGAIg",
+            "ASgLMhsuWGlhb3lhb1BhaWppdUNhcmRHcm91cERhdGE6AjgBGmgKJFhpYW95",
+            "YW9QYWlqaXVDYXJkR3JvdXBTY29yZURhdGFFbnRyeRILCgNrZXkYASABKAkS",
+            "LwoFdmFsdWUYAiABKAsyIC5YaWFveWFvUGFpaml1Q2FyZEdyb3VwU2NvcmVE",
+            "YXRhOgI4ASI0ChhDcmF6eVBhaWppdUNhcmRHcm91cERhdGESCgoCaWQYASAB",
+            "KAkSDAoEbmFtZRgCIAEoCSI6Ch1DcmF6eVBhaWppdUNhcmRHcm91cFNjb3Jl",
+            "RGF0YRIKCgJpZBgBIAEoCRINCgVzY29yZRgCIAEoBSI1ChlMYW90aWVQYWlq",
+            "aXVDYXJkR3JvdXBEYXRhEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkiOwoe",
+            "TGFvdGllUGFpaml1Q2FyZEdyb3VwU2NvcmVEYXRhEgoKAmlkGAEgASgJEg0K",
+            "BXNjb3JlGAIgASgFIioKDlBhaWppdUNhcmREYXRhEgoKAmlkGAEgASgFEgwK",
+            "BGNhcmQYAiABKAUiLwoTUGFpaml1Q2FyZEdyb3VwRGF0YRIKCgJpZBgBIAEo",
+            "CRIMCgRuYW1lGAIgASgJIjUKGFBhaWppdUNhcmRHcm91cFNjb3JlRGF0YRIK",
+            "CgJpZBgBIAEoCRINCgVzY29yZRgCIAEoBSL5AwoIUm9vbURhdGESCgoCaWQY",
+            "ASABKAkSIwoFbW9uZXkYAiADKAsyFC5Sb29tRGF0YS5Nb25leUVudHJ5Eg4K",
+            "Bm1heEJldBgDIAEoARIrCgllYWNoTW9uZXkYBCADKAsyGC5Sb29tRGF0YS5F",
+            "YWNoTW9uZXlFbnRyeRIRCglpc0FkZEdvbGQYBSABKAUSFgoOaXNXaW5uZXIy",
+            "RGl6aHUYBiABKAUSFgoOcGFpaml1RGF0YU5hbWUYByABKAkSKwoJZW50ZXJH",
+            "b2xkGAggAygLMhguUm9vbURhdGEuRW50ZXJHb2xkRW50cnkSJwoHb3V0R29s",
+            "ZBgJIAMoCzIWLlJvb21EYXRhLk91dEdvbGRFbnRyeRIOCgZyZWJhdGUYCiAB",
+            "KAUSFAoMaW5zdGFuY2VOYW1lGAsgASgJGiwKCk1vbmV5RW50cnkSCwoDa2V5",
+            "GAEgASgFEg0KBXZhbHVlGAIgASgFOgI4ARowCg5FYWNoTW9uZXlFbnRyeRIL",
+            "CgNrZXkYASABKAUSDQoFdmFsdWUYAiABKAU6AjgBGjAKDkVudGVyR29sZEVu",
+            "dHJ5EgsKA2tleRgBIAEoBRINCgV2YWx1ZRgCIAEoBToCOAEaLgoMT3V0R29s",
+            "ZEVudHJ5EgsKA2tleRgBIAEoBRINCgV2YWx1ZRgCIAEoBToCOAEivQIKCFRl",
+            "c3REYXRhEgoKAmlkGAEgASgFEgwKBG5hbWUYAiABKAkSCwoDYWdlGAMgASgF",
+            "EgsKA2V4cBgEIAMoBRIlCgZ3ZWFwb24YBSADKAsyFS5UZXN0RGF0YS5XZWFw",
+            "b25FbnRyeRIQCgh0ZXN0TG9uZxgGIAEoAxISCgp0ZXN0RG91YmxlGAcgASgB",
+            "EhYKDnRlc3RMaXN0RG91YmxlGAggAygBEjMKDXRlc3RNYXBEb3VibGUYCSAD",
+            "KAsyHC5UZXN0RGF0YS5UZXN0TWFwRG91YmxlRW50cnkaLQoLV2VhcG9uRW50",
+            "cnkSCwoDa2V5GAEgASgFEg0KBXZhbHVlGAIgASgJOgI4ARo0ChJUZXN0TWFw",
+            "RG91YmxlRW50cnkSCwoDa2V5GAEgASgDEg0KBXZhbHVlGAIgASgBOgI4ASI2",
+            "ChpYaWFveWFvUGFpaml1Q2FyZEdyb3VwRGF0YRIKCgJpZBgBIAEoCRIMCgRu",
+            "YW1lGAIgASgJIjwKH1hpYW95YW9QYWlqaXVDYXJkR3JvdXBTY29yZURhdGES",
+            "CgoCaWQYASABKAkSDQoFc2NvcmUYAiABKAVCPwodY29tLmNvZGUuc2VydmVy",
+            "LmNvbnN0YW50LmRhdGFCD1N0YXRpY0RhdGFQcm90b6oCDGNvbS5ic2wuZGF0",
+            "YWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.DataManager), global::com.bsl.data.DataManager.Parser, new[]{ "PaijiuCardData", "PaijiuCardGroupData", "PaijiuCardGroupScoreData", "RoomData", "TestData" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, null, null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.DataManager), global::com.bsl.data.DataManager.Parser, new[]{ "CrazyPaijiuCardGroupData", "CrazyPaijiuCardGroupScoreData", "LaotiePaijiuCardGroupData", "LaotiePaijiuCardGroupScoreData", "PaijiuCardData", "PaijiuCardGroupData", "PaijiuCardGroupScoreData", "RoomData", "TestData", "XiaoyaoPaijiuCardGroupData", "XiaoyaoPaijiuCardGroupScoreData" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, null, null, null, null, null, null, null, null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.CrazyPaijiuCardGroupData), global::com.bsl.data.CrazyPaijiuCardGroupData.Parser, new[]{ "Id", "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.CrazyPaijiuCardGroupScoreData), global::com.bsl.data.CrazyPaijiuCardGroupScoreData.Parser, new[]{ "Id", "Score" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.LaotiePaijiuCardGroupData), global::com.bsl.data.LaotiePaijiuCardGroupData.Parser, new[]{ "Id", "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.LaotiePaijiuCardGroupScoreData), global::com.bsl.data.LaotiePaijiuCardGroupScoreData.Parser, new[]{ "Id", "Score" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.PaijiuCardData), global::com.bsl.data.PaijiuCardData.Parser, new[]{ "Id", "Card" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.PaijiuCardGroupData), global::com.bsl.data.PaijiuCardGroupData.Parser, new[]{ "Id", "Name" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.PaijiuCardGroupScoreData), global::com.bsl.data.PaijiuCardGroupScoreData.Parser, new[]{ "Id", "Score" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.RoomData), global::com.bsl.data.RoomData.Parser, new[]{ "Id", "Money", "EachMoney", "IsAddGold", "InstanceName" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.TestData), global::com.bsl.data.TestData.Parser, new[]{ "Id", "Name", "Age", "Exp", "Weapon", "TestLong", "TestDouble", "TestListDouble", "TestMapDouble" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.RoomData), global::com.bsl.data.RoomData.Parser, new[]{ "Id", "Money", "MaxBet", "EachMoney", "IsAddGold", "IsWinner2Dizhu", "PaijiuDataName", "EnterGold", "OutGold", "Rebate", "InstanceName" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.TestData), global::com.bsl.data.TestData.Parser, new[]{ "Id", "Name", "Age", "Exp", "Weapon", "TestLong", "TestDouble", "TestListDouble", "TestMapDouble" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.XiaoyaoPaijiuCardGroupData), global::com.bsl.data.XiaoyaoPaijiuCardGroupData.Parser, new[]{ "Id", "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::com.bsl.data.XiaoyaoPaijiuCardGroupScoreData), global::com.bsl.data.XiaoyaoPaijiuCardGroupScoreData.Parser, new[]{ "Id", "Score" }, null, null, null)
           }));
     }
     #endregion
@@ -95,11 +139,17 @@ namespace com.bsl.data {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DataManager(DataManager other) : this() {
+      crazyPaijiuCardGroupData_ = other.crazyPaijiuCardGroupData_.Clone();
+      crazyPaijiuCardGroupScoreData_ = other.crazyPaijiuCardGroupScoreData_.Clone();
+      laotiePaijiuCardGroupData_ = other.laotiePaijiuCardGroupData_.Clone();
+      laotiePaijiuCardGroupScoreData_ = other.laotiePaijiuCardGroupScoreData_.Clone();
       paijiuCardData_ = other.paijiuCardData_.Clone();
       paijiuCardGroupData_ = other.paijiuCardGroupData_.Clone();
       paijiuCardGroupScoreData_ = other.paijiuCardGroupScoreData_.Clone();
       roomData_ = other.roomData_.Clone();
       testData_ = other.testData_.Clone();
+      xiaoyaoPaijiuCardGroupData_ = other.xiaoyaoPaijiuCardGroupData_.Clone();
+      xiaoyaoPaijiuCardGroupScoreData_ = other.xiaoyaoPaijiuCardGroupScoreData_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -107,10 +157,50 @@ namespace com.bsl.data {
       return new DataManager(this);
     }
 
+    /// <summary>Field number for the "crazyPaijiuCardGroupData" field.</summary>
+    public const int CrazyPaijiuCardGroupDataFieldNumber = 1;
+    private static readonly pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupData>.Codec _map_crazyPaijiuCardGroupData_codec
+        = new pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.CrazyPaijiuCardGroupData.Parser), 10);
+    private readonly pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupData> crazyPaijiuCardGroupData_ = new pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupData> CrazyPaijiuCardGroupData {
+      get { return crazyPaijiuCardGroupData_; }
+    }
+
+    /// <summary>Field number for the "crazyPaijiuCardGroupScoreData" field.</summary>
+    public const int CrazyPaijiuCardGroupScoreDataFieldNumber = 2;
+    private static readonly pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupScoreData>.Codec _map_crazyPaijiuCardGroupScoreData_codec
+        = new pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupScoreData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.CrazyPaijiuCardGroupScoreData.Parser), 18);
+    private readonly pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupScoreData> crazyPaijiuCardGroupScoreData_ = new pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupScoreData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, global::com.bsl.data.CrazyPaijiuCardGroupScoreData> CrazyPaijiuCardGroupScoreData {
+      get { return crazyPaijiuCardGroupScoreData_; }
+    }
+
+    /// <summary>Field number for the "laotiePaijiuCardGroupData" field.</summary>
+    public const int LaotiePaijiuCardGroupDataFieldNumber = 3;
+    private static readonly pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupData>.Codec _map_laotiePaijiuCardGroupData_codec
+        = new pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.LaotiePaijiuCardGroupData.Parser), 26);
+    private readonly pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupData> laotiePaijiuCardGroupData_ = new pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupData> LaotiePaijiuCardGroupData {
+      get { return laotiePaijiuCardGroupData_; }
+    }
+
+    /// <summary>Field number for the "laotiePaijiuCardGroupScoreData" field.</summary>
+    public const int LaotiePaijiuCardGroupScoreDataFieldNumber = 4;
+    private static readonly pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupScoreData>.Codec _map_laotiePaijiuCardGroupScoreData_codec
+        = new pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupScoreData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.LaotiePaijiuCardGroupScoreData.Parser), 34);
+    private readonly pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupScoreData> laotiePaijiuCardGroupScoreData_ = new pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupScoreData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, global::com.bsl.data.LaotiePaijiuCardGroupScoreData> LaotiePaijiuCardGroupScoreData {
+      get { return laotiePaijiuCardGroupScoreData_; }
+    }
+
     /// <summary>Field number for the "paijiuCardData" field.</summary>
-    public const int PaijiuCardDataFieldNumber = 1;
+    public const int PaijiuCardDataFieldNumber = 5;
     private static readonly pbc::MapField<int, global::com.bsl.data.PaijiuCardData>.Codec _map_paijiuCardData_codec
-        = new pbc::MapField<int, global::com.bsl.data.PaijiuCardData>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForMessage(18, global::com.bsl.data.PaijiuCardData.Parser), 10);
+        = new pbc::MapField<int, global::com.bsl.data.PaijiuCardData>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForMessage(18, global::com.bsl.data.PaijiuCardData.Parser), 42);
     private readonly pbc::MapField<int, global::com.bsl.data.PaijiuCardData> paijiuCardData_ = new pbc::MapField<int, global::com.bsl.data.PaijiuCardData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<int, global::com.bsl.data.PaijiuCardData> PaijiuCardData {
@@ -118,9 +208,9 @@ namespace com.bsl.data {
     }
 
     /// <summary>Field number for the "paijiuCardGroupData" field.</summary>
-    public const int PaijiuCardGroupDataFieldNumber = 2;
+    public const int PaijiuCardGroupDataFieldNumber = 6;
     private static readonly pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupData>.Codec _map_paijiuCardGroupData_codec
-        = new pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.PaijiuCardGroupData.Parser), 18);
+        = new pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.PaijiuCardGroupData.Parser), 50);
     private readonly pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupData> paijiuCardGroupData_ = new pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupData> PaijiuCardGroupData {
@@ -128,9 +218,9 @@ namespace com.bsl.data {
     }
 
     /// <summary>Field number for the "paijiuCardGroupScoreData" field.</summary>
-    public const int PaijiuCardGroupScoreDataFieldNumber = 3;
+    public const int PaijiuCardGroupScoreDataFieldNumber = 7;
     private static readonly pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupScoreData>.Codec _map_paijiuCardGroupScoreData_codec
-        = new pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupScoreData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.PaijiuCardGroupScoreData.Parser), 26);
+        = new pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupScoreData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.PaijiuCardGroupScoreData.Parser), 58);
     private readonly pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupScoreData> paijiuCardGroupScoreData_ = new pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupScoreData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, global::com.bsl.data.PaijiuCardGroupScoreData> PaijiuCardGroupScoreData {
@@ -138,9 +228,9 @@ namespace com.bsl.data {
     }
 
     /// <summary>Field number for the "roomData" field.</summary>
-    public const int RoomDataFieldNumber = 4;
+    public const int RoomDataFieldNumber = 8;
     private static readonly pbc::MapField<string, global::com.bsl.data.RoomData>.Codec _map_roomData_codec
-        = new pbc::MapField<string, global::com.bsl.data.RoomData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.RoomData.Parser), 34);
+        = new pbc::MapField<string, global::com.bsl.data.RoomData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.RoomData.Parser), 66);
     private readonly pbc::MapField<string, global::com.bsl.data.RoomData> roomData_ = new pbc::MapField<string, global::com.bsl.data.RoomData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, global::com.bsl.data.RoomData> RoomData {
@@ -148,13 +238,33 @@ namespace com.bsl.data {
     }
 
     /// <summary>Field number for the "testData" field.</summary>
-    public const int TestDataFieldNumber = 5;
+    public const int TestDataFieldNumber = 9;
     private static readonly pbc::MapField<int, global::com.bsl.data.TestData>.Codec _map_testData_codec
-        = new pbc::MapField<int, global::com.bsl.data.TestData>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForMessage(18, global::com.bsl.data.TestData.Parser), 42);
+        = new pbc::MapField<int, global::com.bsl.data.TestData>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForMessage(18, global::com.bsl.data.TestData.Parser), 74);
     private readonly pbc::MapField<int, global::com.bsl.data.TestData> testData_ = new pbc::MapField<int, global::com.bsl.data.TestData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<int, global::com.bsl.data.TestData> TestData {
       get { return testData_; }
+    }
+
+    /// <summary>Field number for the "xiaoyaoPaijiuCardGroupData" field.</summary>
+    public const int XiaoyaoPaijiuCardGroupDataFieldNumber = 10;
+    private static readonly pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupData>.Codec _map_xiaoyaoPaijiuCardGroupData_codec
+        = new pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.XiaoyaoPaijiuCardGroupData.Parser), 82);
+    private readonly pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupData> xiaoyaoPaijiuCardGroupData_ = new pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupData> XiaoyaoPaijiuCardGroupData {
+      get { return xiaoyaoPaijiuCardGroupData_; }
+    }
+
+    /// <summary>Field number for the "xiaoyaoPaijiuCardGroupScoreData" field.</summary>
+    public const int XiaoyaoPaijiuCardGroupScoreDataFieldNumber = 11;
+    private static readonly pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupScoreData>.Codec _map_xiaoyaoPaijiuCardGroupScoreData_codec
+        = new pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupScoreData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::com.bsl.data.XiaoyaoPaijiuCardGroupScoreData.Parser), 90);
+    private readonly pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupScoreData> xiaoyaoPaijiuCardGroupScoreData_ = new pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupScoreData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, global::com.bsl.data.XiaoyaoPaijiuCardGroupScoreData> XiaoyaoPaijiuCardGroupScoreData {
+      get { return xiaoyaoPaijiuCardGroupScoreData_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -170,22 +280,34 @@ namespace com.bsl.data {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!CrazyPaijiuCardGroupData.Equals(other.CrazyPaijiuCardGroupData)) return false;
+      if (!CrazyPaijiuCardGroupScoreData.Equals(other.CrazyPaijiuCardGroupScoreData)) return false;
+      if (!LaotiePaijiuCardGroupData.Equals(other.LaotiePaijiuCardGroupData)) return false;
+      if (!LaotiePaijiuCardGroupScoreData.Equals(other.LaotiePaijiuCardGroupScoreData)) return false;
       if (!PaijiuCardData.Equals(other.PaijiuCardData)) return false;
       if (!PaijiuCardGroupData.Equals(other.PaijiuCardGroupData)) return false;
       if (!PaijiuCardGroupScoreData.Equals(other.PaijiuCardGroupScoreData)) return false;
       if (!RoomData.Equals(other.RoomData)) return false;
       if (!TestData.Equals(other.TestData)) return false;
+      if (!XiaoyaoPaijiuCardGroupData.Equals(other.XiaoyaoPaijiuCardGroupData)) return false;
+      if (!XiaoyaoPaijiuCardGroupScoreData.Equals(other.XiaoyaoPaijiuCardGroupScoreData)) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      hash ^= CrazyPaijiuCardGroupData.GetHashCode();
+      hash ^= CrazyPaijiuCardGroupScoreData.GetHashCode();
+      hash ^= LaotiePaijiuCardGroupData.GetHashCode();
+      hash ^= LaotiePaijiuCardGroupScoreData.GetHashCode();
       hash ^= PaijiuCardData.GetHashCode();
       hash ^= PaijiuCardGroupData.GetHashCode();
       hash ^= PaijiuCardGroupScoreData.GetHashCode();
       hash ^= RoomData.GetHashCode();
       hash ^= TestData.GetHashCode();
+      hash ^= XiaoyaoPaijiuCardGroupData.GetHashCode();
+      hash ^= XiaoyaoPaijiuCardGroupScoreData.GetHashCode();
       return hash;
     }
 
@@ -196,21 +318,33 @@ namespace com.bsl.data {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      crazyPaijiuCardGroupData_.WriteTo(output, _map_crazyPaijiuCardGroupData_codec);
+      crazyPaijiuCardGroupScoreData_.WriteTo(output, _map_crazyPaijiuCardGroupScoreData_codec);
+      laotiePaijiuCardGroupData_.WriteTo(output, _map_laotiePaijiuCardGroupData_codec);
+      laotiePaijiuCardGroupScoreData_.WriteTo(output, _map_laotiePaijiuCardGroupScoreData_codec);
       paijiuCardData_.WriteTo(output, _map_paijiuCardData_codec);
       paijiuCardGroupData_.WriteTo(output, _map_paijiuCardGroupData_codec);
       paijiuCardGroupScoreData_.WriteTo(output, _map_paijiuCardGroupScoreData_codec);
       roomData_.WriteTo(output, _map_roomData_codec);
       testData_.WriteTo(output, _map_testData_codec);
+      xiaoyaoPaijiuCardGroupData_.WriteTo(output, _map_xiaoyaoPaijiuCardGroupData_codec);
+      xiaoyaoPaijiuCardGroupScoreData_.WriteTo(output, _map_xiaoyaoPaijiuCardGroupScoreData_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      size += crazyPaijiuCardGroupData_.CalculateSize(_map_crazyPaijiuCardGroupData_codec);
+      size += crazyPaijiuCardGroupScoreData_.CalculateSize(_map_crazyPaijiuCardGroupScoreData_codec);
+      size += laotiePaijiuCardGroupData_.CalculateSize(_map_laotiePaijiuCardGroupData_codec);
+      size += laotiePaijiuCardGroupScoreData_.CalculateSize(_map_laotiePaijiuCardGroupScoreData_codec);
       size += paijiuCardData_.CalculateSize(_map_paijiuCardData_codec);
       size += paijiuCardGroupData_.CalculateSize(_map_paijiuCardGroupData_codec);
       size += paijiuCardGroupScoreData_.CalculateSize(_map_paijiuCardGroupScoreData_codec);
       size += roomData_.CalculateSize(_map_roomData_codec);
       size += testData_.CalculateSize(_map_testData_codec);
+      size += xiaoyaoPaijiuCardGroupData_.CalculateSize(_map_xiaoyaoPaijiuCardGroupData_codec);
+      size += xiaoyaoPaijiuCardGroupScoreData_.CalculateSize(_map_xiaoyaoPaijiuCardGroupScoreData_codec);
       return size;
     }
 
@@ -219,11 +353,17 @@ namespace com.bsl.data {
       if (other == null) {
         return;
       }
+      crazyPaijiuCardGroupData_.Add(other.crazyPaijiuCardGroupData_);
+      crazyPaijiuCardGroupScoreData_.Add(other.crazyPaijiuCardGroupScoreData_);
+      laotiePaijiuCardGroupData_.Add(other.laotiePaijiuCardGroupData_);
+      laotiePaijiuCardGroupScoreData_.Add(other.laotiePaijiuCardGroupScoreData_);
       paijiuCardData_.Add(other.paijiuCardData_);
       paijiuCardGroupData_.Add(other.paijiuCardGroupData_);
       paijiuCardGroupScoreData_.Add(other.paijiuCardGroupScoreData_);
       roomData_.Add(other.roomData_);
       testData_.Add(other.testData_);
+      xiaoyaoPaijiuCardGroupData_.Add(other.xiaoyaoPaijiuCardGroupData_);
+      xiaoyaoPaijiuCardGroupScoreData_.Add(other.xiaoyaoPaijiuCardGroupScoreData_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -235,23 +375,627 @@ namespace com.bsl.data {
             input.SkipLastField();
             break;
           case 10: {
-            paijiuCardData_.AddEntriesFrom(input, _map_paijiuCardData_codec);
+            crazyPaijiuCardGroupData_.AddEntriesFrom(input, _map_crazyPaijiuCardGroupData_codec);
             break;
           }
           case 18: {
-            paijiuCardGroupData_.AddEntriesFrom(input, _map_paijiuCardGroupData_codec);
+            crazyPaijiuCardGroupScoreData_.AddEntriesFrom(input, _map_crazyPaijiuCardGroupScoreData_codec);
             break;
           }
           case 26: {
-            paijiuCardGroupScoreData_.AddEntriesFrom(input, _map_paijiuCardGroupScoreData_codec);
+            laotiePaijiuCardGroupData_.AddEntriesFrom(input, _map_laotiePaijiuCardGroupData_codec);
             break;
           }
           case 34: {
-            roomData_.AddEntriesFrom(input, _map_roomData_codec);
+            laotiePaijiuCardGroupScoreData_.AddEntriesFrom(input, _map_laotiePaijiuCardGroupScoreData_codec);
             break;
           }
           case 42: {
+            paijiuCardData_.AddEntriesFrom(input, _map_paijiuCardData_codec);
+            break;
+          }
+          case 50: {
+            paijiuCardGroupData_.AddEntriesFrom(input, _map_paijiuCardGroupData_codec);
+            break;
+          }
+          case 58: {
+            paijiuCardGroupScoreData_.AddEntriesFrom(input, _map_paijiuCardGroupScoreData_codec);
+            break;
+          }
+          case 66: {
+            roomData_.AddEntriesFrom(input, _map_roomData_codec);
+            break;
+          }
+          case 74: {
             testData_.AddEntriesFrom(input, _map_testData_codec);
+            break;
+          }
+          case 82: {
+            xiaoyaoPaijiuCardGroupData_.AddEntriesFrom(input, _map_xiaoyaoPaijiuCardGroupData_codec);
+            break;
+          }
+          case 90: {
+            xiaoyaoPaijiuCardGroupScoreData_.AddEntriesFrom(input, _map_xiaoyaoPaijiuCardGroupScoreData_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CrazyPaijiuCardGroupData : pb::IMessage<CrazyPaijiuCardGroupData> {
+    private static readonly pb::MessageParser<CrazyPaijiuCardGroupData> _parser = new pb::MessageParser<CrazyPaijiuCardGroupData>(() => new CrazyPaijiuCardGroupData());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CrazyPaijiuCardGroupData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CrazyPaijiuCardGroupData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CrazyPaijiuCardGroupData(CrazyPaijiuCardGroupData other) : this() {
+      id_ = other.id_;
+      name_ = other.name_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CrazyPaijiuCardGroupData Clone() {
+      return new CrazyPaijiuCardGroupData(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CrazyPaijiuCardGroupData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CrazyPaijiuCardGroupData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Name != other.Name) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CrazyPaijiuCardGroupData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CrazyPaijiuCardGroupScoreData : pb::IMessage<CrazyPaijiuCardGroupScoreData> {
+    private static readonly pb::MessageParser<CrazyPaijiuCardGroupScoreData> _parser = new pb::MessageParser<CrazyPaijiuCardGroupScoreData>(() => new CrazyPaijiuCardGroupScoreData());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CrazyPaijiuCardGroupScoreData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CrazyPaijiuCardGroupScoreData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CrazyPaijiuCardGroupScoreData(CrazyPaijiuCardGroupScoreData other) : this() {
+      id_ = other.id_;
+      score_ = other.score_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CrazyPaijiuCardGroupScoreData Clone() {
+      return new CrazyPaijiuCardGroupScoreData(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "score" field.</summary>
+    public const int ScoreFieldNumber = 2;
+    private int score_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Score {
+      get { return score_; }
+      set {
+        score_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CrazyPaijiuCardGroupScoreData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CrazyPaijiuCardGroupScoreData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Score != other.Score) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Score != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Score);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CrazyPaijiuCardGroupScoreData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Score != 0) {
+        Score = other.Score;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Score = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class LaotiePaijiuCardGroupData : pb::IMessage<LaotiePaijiuCardGroupData> {
+    private static readonly pb::MessageParser<LaotiePaijiuCardGroupData> _parser = new pb::MessageParser<LaotiePaijiuCardGroupData>(() => new LaotiePaijiuCardGroupData());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LaotiePaijiuCardGroupData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LaotiePaijiuCardGroupData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LaotiePaijiuCardGroupData(LaotiePaijiuCardGroupData other) : this() {
+      id_ = other.id_;
+      name_ = other.name_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LaotiePaijiuCardGroupData Clone() {
+      return new LaotiePaijiuCardGroupData(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LaotiePaijiuCardGroupData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LaotiePaijiuCardGroupData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Name != other.Name) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LaotiePaijiuCardGroupData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class LaotiePaijiuCardGroupScoreData : pb::IMessage<LaotiePaijiuCardGroupScoreData> {
+    private static readonly pb::MessageParser<LaotiePaijiuCardGroupScoreData> _parser = new pb::MessageParser<LaotiePaijiuCardGroupScoreData>(() => new LaotiePaijiuCardGroupScoreData());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LaotiePaijiuCardGroupScoreData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LaotiePaijiuCardGroupScoreData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LaotiePaijiuCardGroupScoreData(LaotiePaijiuCardGroupScoreData other) : this() {
+      id_ = other.id_;
+      score_ = other.score_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LaotiePaijiuCardGroupScoreData Clone() {
+      return new LaotiePaijiuCardGroupScoreData(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "score" field.</summary>
+    public const int ScoreFieldNumber = 2;
+    private int score_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Score {
+      get { return score_; }
+      set {
+        score_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LaotiePaijiuCardGroupScoreData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LaotiePaijiuCardGroupScoreData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Score != other.Score) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Score != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Score);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LaotiePaijiuCardGroupScoreData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Score != 0) {
+        Score = other.Score;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Score = input.ReadInt32();
             break;
           }
         }
@@ -267,7 +1011,7 @@ namespace com.bsl.data {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[1]; }
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -412,7 +1156,7 @@ namespace com.bsl.data {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[2]; }
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -557,7 +1301,7 @@ namespace com.bsl.data {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[3]; }
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -702,7 +1446,7 @@ namespace com.bsl.data {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[4]; }
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -721,8 +1465,14 @@ namespace com.bsl.data {
     public RoomData(RoomData other) : this() {
       id_ = other.id_;
       money_ = other.money_.Clone();
+      maxBet_ = other.maxBet_;
       eachMoney_ = other.eachMoney_.Clone();
       isAddGold_ = other.isAddGold_;
+      isWinner2Dizhu_ = other.isWinner2Dizhu_;
+      paijiuDataName_ = other.paijiuDataName_;
+      enterGold_ = other.enterGold_.Clone();
+      outGold_ = other.outGold_.Clone();
+      rebate_ = other.rebate_;
       instanceName_ = other.instanceName_;
     }
 
@@ -752,10 +1502,21 @@ namespace com.bsl.data {
       get { return money_; }
     }
 
+    /// <summary>Field number for the "maxBet" field.</summary>
+    public const int MaxBetFieldNumber = 3;
+    private double maxBet_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double MaxBet {
+      get { return maxBet_; }
+      set {
+        maxBet_ = value;
+      }
+    }
+
     /// <summary>Field number for the "eachMoney" field.</summary>
-    public const int EachMoneyFieldNumber = 3;
+    public const int EachMoneyFieldNumber = 4;
     private static readonly pbc::MapField<int, int>.Codec _map_eachMoney_codec
-        = new pbc::MapField<int, int>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForInt32(16), 26);
+        = new pbc::MapField<int, int>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForInt32(16), 34);
     private readonly pbc::MapField<int, int> eachMoney_ = new pbc::MapField<int, int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<int, int> EachMoney {
@@ -763,7 +1524,7 @@ namespace com.bsl.data {
     }
 
     /// <summary>Field number for the "isAddGold" field.</summary>
-    public const int IsAddGoldFieldNumber = 4;
+    public const int IsAddGoldFieldNumber = 5;
     private int isAddGold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int IsAddGold {
@@ -773,8 +1534,61 @@ namespace com.bsl.data {
       }
     }
 
+    /// <summary>Field number for the "isWinner2Dizhu" field.</summary>
+    public const int IsWinner2DizhuFieldNumber = 6;
+    private int isWinner2Dizhu_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int IsWinner2Dizhu {
+      get { return isWinner2Dizhu_; }
+      set {
+        isWinner2Dizhu_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "paijiuDataName" field.</summary>
+    public const int PaijiuDataNameFieldNumber = 7;
+    private string paijiuDataName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PaijiuDataName {
+      get { return paijiuDataName_; }
+      set {
+        paijiuDataName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "enterGold" field.</summary>
+    public const int EnterGoldFieldNumber = 8;
+    private static readonly pbc::MapField<int, int>.Codec _map_enterGold_codec
+        = new pbc::MapField<int, int>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForInt32(16), 66);
+    private readonly pbc::MapField<int, int> enterGold_ = new pbc::MapField<int, int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<int, int> EnterGold {
+      get { return enterGold_; }
+    }
+
+    /// <summary>Field number for the "outGold" field.</summary>
+    public const int OutGoldFieldNumber = 9;
+    private static readonly pbc::MapField<int, int>.Codec _map_outGold_codec
+        = new pbc::MapField<int, int>.Codec(pb::FieldCodec.ForInt32(8), pb::FieldCodec.ForInt32(16), 74);
+    private readonly pbc::MapField<int, int> outGold_ = new pbc::MapField<int, int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<int, int> OutGold {
+      get { return outGold_; }
+    }
+
+    /// <summary>Field number for the "rebate" field.</summary>
+    public const int RebateFieldNumber = 10;
+    private int rebate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Rebate {
+      get { return rebate_; }
+      set {
+        rebate_ = value;
+      }
+    }
+
     /// <summary>Field number for the "instanceName" field.</summary>
-    public const int InstanceNameFieldNumber = 5;
+    public const int InstanceNameFieldNumber = 11;
     private string instanceName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string InstanceName {
@@ -799,8 +1613,14 @@ namespace com.bsl.data {
       }
       if (Id != other.Id) return false;
       if (!Money.Equals(other.Money)) return false;
+      if (MaxBet != other.MaxBet) return false;
       if (!EachMoney.Equals(other.EachMoney)) return false;
       if (IsAddGold != other.IsAddGold) return false;
+      if (IsWinner2Dizhu != other.IsWinner2Dizhu) return false;
+      if (PaijiuDataName != other.PaijiuDataName) return false;
+      if (!EnterGold.Equals(other.EnterGold)) return false;
+      if (!OutGold.Equals(other.OutGold)) return false;
+      if (Rebate != other.Rebate) return false;
       if (InstanceName != other.InstanceName) return false;
       return true;
     }
@@ -810,8 +1630,14 @@ namespace com.bsl.data {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       hash ^= Money.GetHashCode();
+      if (MaxBet != 0D) hash ^= MaxBet.GetHashCode();
       hash ^= EachMoney.GetHashCode();
       if (IsAddGold != 0) hash ^= IsAddGold.GetHashCode();
+      if (IsWinner2Dizhu != 0) hash ^= IsWinner2Dizhu.GetHashCode();
+      if (PaijiuDataName.Length != 0) hash ^= PaijiuDataName.GetHashCode();
+      hash ^= EnterGold.GetHashCode();
+      hash ^= OutGold.GetHashCode();
+      if (Rebate != 0) hash ^= Rebate.GetHashCode();
       if (InstanceName.Length != 0) hash ^= InstanceName.GetHashCode();
       return hash;
     }
@@ -828,13 +1654,31 @@ namespace com.bsl.data {
         output.WriteString(Id);
       }
       money_.WriteTo(output, _map_money_codec);
+      if (MaxBet != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(MaxBet);
+      }
       eachMoney_.WriteTo(output, _map_eachMoney_codec);
       if (IsAddGold != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt32(IsAddGold);
       }
+      if (IsWinner2Dizhu != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(IsWinner2Dizhu);
+      }
+      if (PaijiuDataName.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(PaijiuDataName);
+      }
+      enterGold_.WriteTo(output, _map_enterGold_codec);
+      outGold_.WriteTo(output, _map_outGold_codec);
+      if (Rebate != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(Rebate);
+      }
       if (InstanceName.Length != 0) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(90);
         output.WriteString(InstanceName);
       }
     }
@@ -846,9 +1690,23 @@ namespace com.bsl.data {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
       }
       size += money_.CalculateSize(_map_money_codec);
+      if (MaxBet != 0D) {
+        size += 1 + 8;
+      }
       size += eachMoney_.CalculateSize(_map_eachMoney_codec);
       if (IsAddGold != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsAddGold);
+      }
+      if (IsWinner2Dizhu != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsWinner2Dizhu);
+      }
+      if (PaijiuDataName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PaijiuDataName);
+      }
+      size += enterGold_.CalculateSize(_map_enterGold_codec);
+      size += outGold_.CalculateSize(_map_outGold_codec);
+      if (Rebate != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rebate);
       }
       if (InstanceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(InstanceName);
@@ -865,9 +1723,23 @@ namespace com.bsl.data {
         Id = other.Id;
       }
       money_.Add(other.money_);
+      if (other.MaxBet != 0D) {
+        MaxBet = other.MaxBet;
+      }
       eachMoney_.Add(other.eachMoney_);
       if (other.IsAddGold != 0) {
         IsAddGold = other.IsAddGold;
+      }
+      if (other.IsWinner2Dizhu != 0) {
+        IsWinner2Dizhu = other.IsWinner2Dizhu;
+      }
+      if (other.PaijiuDataName.Length != 0) {
+        PaijiuDataName = other.PaijiuDataName;
+      }
+      enterGold_.Add(other.enterGold_);
+      outGold_.Add(other.outGold_);
+      if (other.Rebate != 0) {
+        Rebate = other.Rebate;
       }
       if (other.InstanceName.Length != 0) {
         InstanceName = other.InstanceName;
@@ -890,15 +1762,39 @@ namespace com.bsl.data {
             money_.AddEntriesFrom(input, _map_money_codec);
             break;
           }
-          case 26: {
+          case 25: {
+            MaxBet = input.ReadDouble();
+            break;
+          }
+          case 34: {
             eachMoney_.AddEntriesFrom(input, _map_eachMoney_codec);
             break;
           }
-          case 32: {
+          case 40: {
             IsAddGold = input.ReadInt32();
             break;
           }
-          case 42: {
+          case 48: {
+            IsWinner2Dizhu = input.ReadInt32();
+            break;
+          }
+          case 58: {
+            PaijiuDataName = input.ReadString();
+            break;
+          }
+          case 66: {
+            enterGold_.AddEntriesFrom(input, _map_enterGold_codec);
+            break;
+          }
+          case 74: {
+            outGold_.AddEntriesFrom(input, _map_outGold_codec);
+            break;
+          }
+          case 80: {
+            Rebate = input.ReadInt32();
+            break;
+          }
+          case 90: {
             InstanceName = input.ReadString();
             break;
           }
@@ -915,7 +1811,7 @@ namespace com.bsl.data {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[5]; }
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1211,6 +2107,296 @@ namespace com.bsl.data {
           }
           case 74: {
             testMapDouble_.AddEntriesFrom(input, _map_testMapDouble_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class XiaoyaoPaijiuCardGroupData : pb::IMessage<XiaoyaoPaijiuCardGroupData> {
+    private static readonly pb::MessageParser<XiaoyaoPaijiuCardGroupData> _parser = new pb::MessageParser<XiaoyaoPaijiuCardGroupData>(() => new XiaoyaoPaijiuCardGroupData());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<XiaoyaoPaijiuCardGroupData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public XiaoyaoPaijiuCardGroupData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public XiaoyaoPaijiuCardGroupData(XiaoyaoPaijiuCardGroupData other) : this() {
+      id_ = other.id_;
+      name_ = other.name_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public XiaoyaoPaijiuCardGroupData Clone() {
+      return new XiaoyaoPaijiuCardGroupData(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as XiaoyaoPaijiuCardGroupData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(XiaoyaoPaijiuCardGroupData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Name != other.Name) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(XiaoyaoPaijiuCardGroupData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class XiaoyaoPaijiuCardGroupScoreData : pb::IMessage<XiaoyaoPaijiuCardGroupScoreData> {
+    private static readonly pb::MessageParser<XiaoyaoPaijiuCardGroupScoreData> _parser = new pb::MessageParser<XiaoyaoPaijiuCardGroupScoreData>(() => new XiaoyaoPaijiuCardGroupScoreData());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<XiaoyaoPaijiuCardGroupScoreData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::com.bsl.data.StaticDataProtoReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public XiaoyaoPaijiuCardGroupScoreData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public XiaoyaoPaijiuCardGroupScoreData(XiaoyaoPaijiuCardGroupScoreData other) : this() {
+      id_ = other.id_;
+      score_ = other.score_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public XiaoyaoPaijiuCardGroupScoreData Clone() {
+      return new XiaoyaoPaijiuCardGroupScoreData(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "score" field.</summary>
+    public const int ScoreFieldNumber = 2;
+    private int score_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Score {
+      get { return score_; }
+      set {
+        score_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as XiaoyaoPaijiuCardGroupScoreData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(XiaoyaoPaijiuCardGroupScoreData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Score != other.Score) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Score != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Score);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(XiaoyaoPaijiuCardGroupScoreData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Score != 0) {
+        Score = other.Score;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Score = input.ReadInt32();
             break;
           }
         }

@@ -19,12 +19,160 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='static_data_proto.proto',
   package='',
   syntax='proto3',
-  serialized_pb=_b('\n\x17static_data_proto.proto\"\xa3\x05\n\x0b\x44\x61taManager\x12\x38\n\x0epaijiuCardData\x18\x01 \x03(\x0b\x32 .DataManager.PaijiuCardDataEntry\x12\x42\n\x13paijiuCardGroupData\x18\x02 \x03(\x0b\x32%.DataManager.PaijiuCardGroupDataEntry\x12L\n\x18paijiuCardGroupScoreData\x18\x03 \x03(\x0b\x32*.DataManager.PaijiuCardGroupScoreDataEntry\x12,\n\x08roomData\x18\x04 \x03(\x0b\x32\x1a.DataManager.RoomDataEntry\x12,\n\x08testData\x18\x05 \x03(\x0b\x32\x1a.DataManager.TestDataEntry\x1a\x46\n\x13PaijiuCardDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x1e\n\x05value\x18\x02 \x01(\x0b\x32\x0f.PaijiuCardData:\x02\x38\x01\x1aP\n\x18PaijiuCardGroupDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12#\n\x05value\x18\x02 \x01(\x0b\x32\x14.PaijiuCardGroupData:\x02\x38\x01\x1aZ\n\x1dPaijiuCardGroupScoreDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12(\n\x05value\x18\x02 \x01(\x0b\x32\x19.PaijiuCardGroupScoreData:\x02\x38\x01\x1a:\n\rRoomDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x18\n\x05value\x18\x02 \x01(\x0b\x32\t.RoomData:\x02\x38\x01\x1a:\n\rTestDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x18\n\x05value\x18\x02 \x01(\x0b\x32\t.TestData:\x02\x38\x01\"*\n\x0ePaijiuCardData\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04\x63\x61rd\x18\x02 \x01(\x05\"/\n\x13PaijiuCardGroupData\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\"5\n\x18PaijiuCardGroupScoreData\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x05\"\xf1\x01\n\x08RoomData\x12\n\n\x02id\x18\x01 \x01(\t\x12#\n\x05money\x18\x02 \x03(\x0b\x32\x14.RoomData.MoneyEntry\x12+\n\teachMoney\x18\x03 \x03(\x0b\x32\x18.RoomData.EachMoneyEntry\x12\x11\n\tisAddGold\x18\x04 \x01(\x05\x12\x14\n\x0cinstanceName\x18\x05 \x01(\t\x1a,\n\nMoneyEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\x1a\x30\n\x0e\x45\x61\x63hMoneyEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\"\xbd\x02\n\x08TestData\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0b\n\x03\x61ge\x18\x03 \x01(\x05\x12\x0b\n\x03\x65xp\x18\x04 \x03(\x05\x12%\n\x06weapon\x18\x05 \x03(\x0b\x32\x15.TestData.WeaponEntry\x12\x10\n\x08testLong\x18\x06 \x01(\x03\x12\x12\n\ntestDouble\x18\x07 \x01(\x01\x12\x16\n\x0etestListDouble\x18\x08 \x03(\x01\x12\x33\n\rtestMapDouble\x18\t \x03(\x0b\x32\x1c.TestData.TestMapDoubleEntry\x1a-\n\x0bWeaponEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a\x34\n\x12TestMapDoubleEntry\x12\x0b\n\x03key\x18\x01 \x01(\x03\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\x42?\n\x1d\x63om.code.server.constant.dataB\x0fStaticDataProto\xaa\x02\x0c\x63om.bsl.datab\x06proto3')
+  serialized_pb=_b('\n\x17static_data_proto.proto\"\xf3\r\n\x0b\x44\x61taManager\x12L\n\x18\x63razyPaijiuCardGroupData\x18\x01 \x03(\x0b\x32*.DataManager.CrazyPaijiuCardGroupDataEntry\x12V\n\x1d\x63razyPaijiuCardGroupScoreData\x18\x02 \x03(\x0b\x32/.DataManager.CrazyPaijiuCardGroupScoreDataEntry\x12N\n\x19laotiePaijiuCardGroupData\x18\x03 \x03(\x0b\x32+.DataManager.LaotiePaijiuCardGroupDataEntry\x12X\n\x1elaotiePaijiuCardGroupScoreData\x18\x04 \x03(\x0b\x32\x30.DataManager.LaotiePaijiuCardGroupScoreDataEntry\x12\x38\n\x0epaijiuCardData\x18\x05 \x03(\x0b\x32 .DataManager.PaijiuCardDataEntry\x12\x42\n\x13paijiuCardGroupData\x18\x06 \x03(\x0b\x32%.DataManager.PaijiuCardGroupDataEntry\x12L\n\x18paijiuCardGroupScoreData\x18\x07 \x03(\x0b\x32*.DataManager.PaijiuCardGroupScoreDataEntry\x12,\n\x08roomData\x18\x08 \x03(\x0b\x32\x1a.DataManager.RoomDataEntry\x12,\n\x08testData\x18\t \x03(\x0b\x32\x1a.DataManager.TestDataEntry\x12P\n\x1axiaoyaoPaijiuCardGroupData\x18\n \x03(\x0b\x32,.DataManager.XiaoyaoPaijiuCardGroupDataEntry\x12Z\n\x1fxiaoyaoPaijiuCardGroupScoreData\x18\x0b \x03(\x0b\x32\x31.DataManager.XiaoyaoPaijiuCardGroupScoreDataEntry\x1aZ\n\x1d\x43razyPaijiuCardGroupDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12(\n\x05value\x18\x02 \x01(\x0b\x32\x19.CrazyPaijiuCardGroupData:\x02\x38\x01\x1a\x64\n\"CrazyPaijiuCardGroupScoreDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12-\n\x05value\x18\x02 \x01(\x0b\x32\x1e.CrazyPaijiuCardGroupScoreData:\x02\x38\x01\x1a\\\n\x1eLaotiePaijiuCardGroupDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12)\n\x05value\x18\x02 \x01(\x0b\x32\x1a.LaotiePaijiuCardGroupData:\x02\x38\x01\x1a\x66\n#LaotiePaijiuCardGroupScoreDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12.\n\x05value\x18\x02 \x01(\x0b\x32\x1f.LaotiePaijiuCardGroupScoreData:\x02\x38\x01\x1a\x46\n\x13PaijiuCardDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x1e\n\x05value\x18\x02 \x01(\x0b\x32\x0f.PaijiuCardData:\x02\x38\x01\x1aP\n\x18PaijiuCardGroupDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12#\n\x05value\x18\x02 \x01(\x0b\x32\x14.PaijiuCardGroupData:\x02\x38\x01\x1aZ\n\x1dPaijiuCardGroupScoreDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12(\n\x05value\x18\x02 \x01(\x0b\x32\x19.PaijiuCardGroupScoreData:\x02\x38\x01\x1a:\n\rRoomDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x18\n\x05value\x18\x02 \x01(\x0b\x32\t.RoomData:\x02\x38\x01\x1a:\n\rTestDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x18\n\x05value\x18\x02 \x01(\x0b\x32\t.TestData:\x02\x38\x01\x1a^\n\x1fXiaoyaoPaijiuCardGroupDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12*\n\x05value\x18\x02 \x01(\x0b\x32\x1b.XiaoyaoPaijiuCardGroupData:\x02\x38\x01\x1ah\n$XiaoyaoPaijiuCardGroupScoreDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12/\n\x05value\x18\x02 \x01(\x0b\x32 .XiaoyaoPaijiuCardGroupScoreData:\x02\x38\x01\"4\n\x18\x43razyPaijiuCardGroupData\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\":\n\x1d\x43razyPaijiuCardGroupScoreData\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x05\"5\n\x19LaotiePaijiuCardGroupData\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\";\n\x1eLaotiePaijiuCardGroupScoreData\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x05\"*\n\x0ePaijiuCardData\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04\x63\x61rd\x18\x02 \x01(\x05\"/\n\x13PaijiuCardGroupData\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\"5\n\x18PaijiuCardGroupScoreData\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x05\"\xf9\x03\n\x08RoomData\x12\n\n\x02id\x18\x01 \x01(\t\x12#\n\x05money\x18\x02 \x03(\x0b\x32\x14.RoomData.MoneyEntry\x12\x0e\n\x06maxBet\x18\x03 \x01(\x01\x12+\n\teachMoney\x18\x04 \x03(\x0b\x32\x18.RoomData.EachMoneyEntry\x12\x11\n\tisAddGold\x18\x05 \x01(\x05\x12\x16\n\x0eisWinner2Dizhu\x18\x06 \x01(\x05\x12\x16\n\x0epaijiuDataName\x18\x07 \x01(\t\x12+\n\tenterGold\x18\x08 \x03(\x0b\x32\x18.RoomData.EnterGoldEntry\x12\'\n\x07outGold\x18\t \x03(\x0b\x32\x16.RoomData.OutGoldEntry\x12\x0e\n\x06rebate\x18\n \x01(\x05\x12\x14\n\x0cinstanceName\x18\x0b \x01(\t\x1a,\n\nMoneyEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\x1a\x30\n\x0e\x45\x61\x63hMoneyEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\x1a\x30\n\x0e\x45nterGoldEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\x1a.\n\x0cOutGoldEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\"\xbd\x02\n\x08TestData\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0b\n\x03\x61ge\x18\x03 \x01(\x05\x12\x0b\n\x03\x65xp\x18\x04 \x03(\x05\x12%\n\x06weapon\x18\x05 \x03(\x0b\x32\x15.TestData.WeaponEntry\x12\x10\n\x08testLong\x18\x06 \x01(\x03\x12\x12\n\ntestDouble\x18\x07 \x01(\x01\x12\x16\n\x0etestListDouble\x18\x08 \x03(\x01\x12\x33\n\rtestMapDouble\x18\t \x03(\x0b\x32\x1c.TestData.TestMapDoubleEntry\x1a-\n\x0bWeaponEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a\x34\n\x12TestMapDoubleEntry\x12\x0b\n\x03key\x18\x01 \x01(\x03\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\"6\n\x1aXiaoyaoPaijiuCardGroupData\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\"<\n\x1fXiaoyaoPaijiuCardGroupScoreData\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x05\x42?\n\x1d\x63om.code.server.constant.dataB\x0fStaticDataProto\xaa\x02\x0c\x63om.bsl.datab\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
+
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPDATAENTRY = _descriptor.Descriptor(
+  name='CrazyPaijiuCardGroupDataEntry',
+  full_name='DataManager.CrazyPaijiuCardGroupDataEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='DataManager.CrazyPaijiuCardGroupDataEntry.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='DataManager.CrazyPaijiuCardGroupDataEntry.value', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=849,
+  serialized_end=939,
+)
+
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPSCOREDATAENTRY = _descriptor.Descriptor(
+  name='CrazyPaijiuCardGroupScoreDataEntry',
+  full_name='DataManager.CrazyPaijiuCardGroupScoreDataEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='DataManager.CrazyPaijiuCardGroupScoreDataEntry.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='DataManager.CrazyPaijiuCardGroupScoreDataEntry.value', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=941,
+  serialized_end=1041,
+)
+
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPDATAENTRY = _descriptor.Descriptor(
+  name='LaotiePaijiuCardGroupDataEntry',
+  full_name='DataManager.LaotiePaijiuCardGroupDataEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='DataManager.LaotiePaijiuCardGroupDataEntry.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='DataManager.LaotiePaijiuCardGroupDataEntry.value', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1043,
+  serialized_end=1135,
+)
+
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPSCOREDATAENTRY = _descriptor.Descriptor(
+  name='LaotiePaijiuCardGroupScoreDataEntry',
+  full_name='DataManager.LaotiePaijiuCardGroupScoreDataEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='DataManager.LaotiePaijiuCardGroupScoreDataEntry.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='DataManager.LaotiePaijiuCardGroupScoreDataEntry.value', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1137,
+  serialized_end=1239,
+)
 
 _DATAMANAGER_PAIJIUCARDDATAENTRY = _descriptor.Descriptor(
   name='PaijiuCardDataEntry',
@@ -59,8 +207,8 @@ _DATAMANAGER_PAIJIUCARDDATAENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=339,
-  serialized_end=409,
+  serialized_start=1241,
+  serialized_end=1311,
 )
 
 _DATAMANAGER_PAIJIUCARDGROUPDATAENTRY = _descriptor.Descriptor(
@@ -96,8 +244,8 @@ _DATAMANAGER_PAIJIUCARDGROUPDATAENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=411,
-  serialized_end=491,
+  serialized_start=1313,
+  serialized_end=1393,
 )
 
 _DATAMANAGER_PAIJIUCARDGROUPSCOREDATAENTRY = _descriptor.Descriptor(
@@ -133,8 +281,8 @@ _DATAMANAGER_PAIJIUCARDGROUPSCOREDATAENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=493,
-  serialized_end=583,
+  serialized_start=1395,
+  serialized_end=1485,
 )
 
 _DATAMANAGER_ROOMDATAENTRY = _descriptor.Descriptor(
@@ -170,8 +318,8 @@ _DATAMANAGER_ROOMDATAENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=585,
-  serialized_end=643,
+  serialized_start=1487,
+  serialized_end=1545,
 )
 
 _DATAMANAGER_TESTDATAENTRY = _descriptor.Descriptor(
@@ -207,8 +355,82 @@ _DATAMANAGER_TESTDATAENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=645,
-  serialized_end=703,
+  serialized_start=1547,
+  serialized_end=1605,
+)
+
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPDATAENTRY = _descriptor.Descriptor(
+  name='XiaoyaoPaijiuCardGroupDataEntry',
+  full_name='DataManager.XiaoyaoPaijiuCardGroupDataEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='DataManager.XiaoyaoPaijiuCardGroupDataEntry.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='DataManager.XiaoyaoPaijiuCardGroupDataEntry.value', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1607,
+  serialized_end=1701,
+)
+
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPSCOREDATAENTRY = _descriptor.Descriptor(
+  name='XiaoyaoPaijiuCardGroupScoreDataEntry',
+  full_name='DataManager.XiaoyaoPaijiuCardGroupScoreDataEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='DataManager.XiaoyaoPaijiuCardGroupScoreDataEntry.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='DataManager.XiaoyaoPaijiuCardGroupScoreDataEntry.value', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1703,
+  serialized_end=1807,
 )
 
 _DATAMANAGER = _descriptor.Descriptor(
@@ -219,36 +441,78 @@ _DATAMANAGER = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='paijiuCardData', full_name='DataManager.paijiuCardData', index=0,
+      name='crazyPaijiuCardGroupData', full_name='DataManager.crazyPaijiuCardGroupData', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='paijiuCardGroupData', full_name='DataManager.paijiuCardGroupData', index=1,
+      name='crazyPaijiuCardGroupScoreData', full_name='DataManager.crazyPaijiuCardGroupScoreData', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='paijiuCardGroupScoreData', full_name='DataManager.paijiuCardGroupScoreData', index=2,
+      name='laotiePaijiuCardGroupData', full_name='DataManager.laotiePaijiuCardGroupData', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='roomData', full_name='DataManager.roomData', index=3,
+      name='laotiePaijiuCardGroupScoreData', full_name='DataManager.laotiePaijiuCardGroupScoreData', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='testData', full_name='DataManager.testData', index=4,
+      name='paijiuCardData', full_name='DataManager.paijiuCardData', index=4,
       number=5, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='paijiuCardGroupData', full_name='DataManager.paijiuCardGroupData', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='paijiuCardGroupScoreData', full_name='DataManager.paijiuCardGroupScoreData', index=6,
+      number=7, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='roomData', full_name='DataManager.roomData', index=7,
+      number=8, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='testData', full_name='DataManager.testData', index=8,
+      number=9, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='xiaoyaoPaijiuCardGroupData', full_name='DataManager.xiaoyaoPaijiuCardGroupData', index=9,
+      number=10, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='xiaoyaoPaijiuCardGroupScoreData', full_name='DataManager.xiaoyaoPaijiuCardGroupScoreData', index=10,
+      number=11, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -256,7 +520,7 @@ _DATAMANAGER = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_DATAMANAGER_PAIJIUCARDDATAENTRY, _DATAMANAGER_PAIJIUCARDGROUPDATAENTRY, _DATAMANAGER_PAIJIUCARDGROUPSCOREDATAENTRY, _DATAMANAGER_ROOMDATAENTRY, _DATAMANAGER_TESTDATAENTRY, ],
+  nested_types=[_DATAMANAGER_CRAZYPAIJIUCARDGROUPDATAENTRY, _DATAMANAGER_CRAZYPAIJIUCARDGROUPSCOREDATAENTRY, _DATAMANAGER_LAOTIEPAIJIUCARDGROUPDATAENTRY, _DATAMANAGER_LAOTIEPAIJIUCARDGROUPSCOREDATAENTRY, _DATAMANAGER_PAIJIUCARDDATAENTRY, _DATAMANAGER_PAIJIUCARDGROUPDATAENTRY, _DATAMANAGER_PAIJIUCARDGROUPSCOREDATAENTRY, _DATAMANAGER_ROOMDATAENTRY, _DATAMANAGER_TESTDATAENTRY, _DATAMANAGER_XIAOYAOPAIJIUCARDGROUPDATAENTRY, _DATAMANAGER_XIAOYAOPAIJIUCARDGROUPSCOREDATAENTRY, ],
   enum_types=[
   ],
   options=None,
@@ -266,7 +530,159 @@ _DATAMANAGER = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=28,
-  serialized_end=703,
+  serialized_end=1807,
+)
+
+
+_CRAZYPAIJIUCARDGROUPDATA = _descriptor.Descriptor(
+  name='CrazyPaijiuCardGroupData',
+  full_name='CrazyPaijiuCardGroupData',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='CrazyPaijiuCardGroupData.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='name', full_name='CrazyPaijiuCardGroupData.name', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1809,
+  serialized_end=1861,
+)
+
+
+_CRAZYPAIJIUCARDGROUPSCOREDATA = _descriptor.Descriptor(
+  name='CrazyPaijiuCardGroupScoreData',
+  full_name='CrazyPaijiuCardGroupScoreData',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='CrazyPaijiuCardGroupScoreData.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='score', full_name='CrazyPaijiuCardGroupScoreData.score', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1863,
+  serialized_end=1921,
+)
+
+
+_LAOTIEPAIJIUCARDGROUPDATA = _descriptor.Descriptor(
+  name='LaotiePaijiuCardGroupData',
+  full_name='LaotiePaijiuCardGroupData',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='LaotiePaijiuCardGroupData.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='name', full_name='LaotiePaijiuCardGroupData.name', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1923,
+  serialized_end=1976,
+)
+
+
+_LAOTIEPAIJIUCARDGROUPSCOREDATA = _descriptor.Descriptor(
+  name='LaotiePaijiuCardGroupScoreData',
+  full_name='LaotiePaijiuCardGroupScoreData',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='LaotiePaijiuCardGroupScoreData.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='score', full_name='LaotiePaijiuCardGroupScoreData.score', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1978,
+  serialized_end=2037,
 )
 
 
@@ -303,8 +719,8 @@ _PAIJIUCARDDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=705,
-  serialized_end=747,
+  serialized_start=2039,
+  serialized_end=2081,
 )
 
 
@@ -341,8 +757,8 @@ _PAIJIUCARDGROUPDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=749,
-  serialized_end=796,
+  serialized_start=2083,
+  serialized_end=2130,
 )
 
 
@@ -379,8 +795,8 @@ _PAIJIUCARDGROUPSCOREDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=798,
-  serialized_end=851,
+  serialized_start=2132,
+  serialized_end=2185,
 )
 
 
@@ -417,8 +833,8 @@ _ROOMDATA_MONEYENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1001,
-  serialized_end=1045,
+  serialized_start=2501,
+  serialized_end=2545,
 )
 
 _ROOMDATA_EACHMONEYENTRY = _descriptor.Descriptor(
@@ -454,8 +870,82 @@ _ROOMDATA_EACHMONEYENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1047,
-  serialized_end=1095,
+  serialized_start=2547,
+  serialized_end=2595,
+)
+
+_ROOMDATA_ENTERGOLDENTRY = _descriptor.Descriptor(
+  name='EnterGoldEntry',
+  full_name='RoomData.EnterGoldEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='RoomData.EnterGoldEntry.key', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='RoomData.EnterGoldEntry.value', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2597,
+  serialized_end=2645,
+)
+
+_ROOMDATA_OUTGOLDENTRY = _descriptor.Descriptor(
+  name='OutGoldEntry',
+  full_name='RoomData.OutGoldEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='RoomData.OutGoldEntry.key', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='RoomData.OutGoldEntry.value', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=_descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001')),
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2647,
+  serialized_end=2693,
 )
 
 _ROOMDATA = _descriptor.Descriptor(
@@ -480,22 +970,64 @@ _ROOMDATA = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='eachMoney', full_name='RoomData.eachMoney', index=2,
-      number=3, type=11, cpp_type=10, label=3,
+      name='maxBet', full_name='RoomData.maxBet', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='eachMoney', full_name='RoomData.eachMoney', index=3,
+      number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='isAddGold', full_name='RoomData.isAddGold', index=3,
-      number=4, type=5, cpp_type=1, label=1,
+      name='isAddGold', full_name='RoomData.isAddGold', index=4,
+      number=5, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='instanceName', full_name='RoomData.instanceName', index=4,
-      number=5, type=9, cpp_type=9, label=1,
+      name='isWinner2Dizhu', full_name='RoomData.isWinner2Dizhu', index=5,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='paijiuDataName', full_name='RoomData.paijiuDataName', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='enterGold', full_name='RoomData.enterGold', index=7,
+      number=8, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='outGold', full_name='RoomData.outGold', index=8,
+      number=9, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='rebate', full_name='RoomData.rebate', index=9,
+      number=10, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='instanceName', full_name='RoomData.instanceName', index=10,
+      number=11, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -503,7 +1035,7 @@ _ROOMDATA = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_ROOMDATA_MONEYENTRY, _ROOMDATA_EACHMONEYENTRY, ],
+  nested_types=[_ROOMDATA_MONEYENTRY, _ROOMDATA_EACHMONEYENTRY, _ROOMDATA_ENTERGOLDENTRY, _ROOMDATA_OUTGOLDENTRY, ],
   enum_types=[
   ],
   options=None,
@@ -512,8 +1044,8 @@ _ROOMDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=854,
-  serialized_end=1095,
+  serialized_start=2188,
+  serialized_end=2693,
 )
 
 
@@ -550,8 +1082,8 @@ _TESTDATA_WEAPONENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1316,
-  serialized_end=1361,
+  serialized_start=2914,
+  serialized_end=2959,
 )
 
 _TESTDATA_TESTMAPDOUBLEENTRY = _descriptor.Descriptor(
@@ -587,8 +1119,8 @@ _TESTDATA_TESTMAPDOUBLEENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1363,
-  serialized_end=1415,
+  serialized_start=2961,
+  serialized_end=3013,
 )
 
 _TESTDATA = _descriptor.Descriptor(
@@ -673,10 +1205,94 @@ _TESTDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1098,
-  serialized_end=1415,
+  serialized_start=2696,
+  serialized_end=3013,
 )
 
+
+_XIAOYAOPAIJIUCARDGROUPDATA = _descriptor.Descriptor(
+  name='XiaoyaoPaijiuCardGroupData',
+  full_name='XiaoyaoPaijiuCardGroupData',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='XiaoyaoPaijiuCardGroupData.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='name', full_name='XiaoyaoPaijiuCardGroupData.name', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3015,
+  serialized_end=3069,
+)
+
+
+_XIAOYAOPAIJIUCARDGROUPSCOREDATA = _descriptor.Descriptor(
+  name='XiaoyaoPaijiuCardGroupScoreData',
+  full_name='XiaoyaoPaijiuCardGroupScoreData',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='XiaoyaoPaijiuCardGroupScoreData.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='score', full_name='XiaoyaoPaijiuCardGroupScoreData.score', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3071,
+  serialized_end=3131,
+)
+
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPDATAENTRY.fields_by_name['value'].message_type = _CRAZYPAIJIUCARDGROUPDATA
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPDATAENTRY.containing_type = _DATAMANAGER
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPSCOREDATAENTRY.fields_by_name['value'].message_type = _CRAZYPAIJIUCARDGROUPSCOREDATA
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPSCOREDATAENTRY.containing_type = _DATAMANAGER
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPDATAENTRY.fields_by_name['value'].message_type = _LAOTIEPAIJIUCARDGROUPDATA
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPDATAENTRY.containing_type = _DATAMANAGER
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPSCOREDATAENTRY.fields_by_name['value'].message_type = _LAOTIEPAIJIUCARDGROUPSCOREDATA
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPSCOREDATAENTRY.containing_type = _DATAMANAGER
 _DATAMANAGER_PAIJIUCARDDATAENTRY.fields_by_name['value'].message_type = _PAIJIUCARDDATA
 _DATAMANAGER_PAIJIUCARDDATAENTRY.containing_type = _DATAMANAGER
 _DATAMANAGER_PAIJIUCARDGROUPDATAENTRY.fields_by_name['value'].message_type = _PAIJIUCARDGROUPDATA
@@ -687,27 +1303,75 @@ _DATAMANAGER_ROOMDATAENTRY.fields_by_name['value'].message_type = _ROOMDATA
 _DATAMANAGER_ROOMDATAENTRY.containing_type = _DATAMANAGER
 _DATAMANAGER_TESTDATAENTRY.fields_by_name['value'].message_type = _TESTDATA
 _DATAMANAGER_TESTDATAENTRY.containing_type = _DATAMANAGER
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPDATAENTRY.fields_by_name['value'].message_type = _XIAOYAOPAIJIUCARDGROUPDATA
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPDATAENTRY.containing_type = _DATAMANAGER
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPSCOREDATAENTRY.fields_by_name['value'].message_type = _XIAOYAOPAIJIUCARDGROUPSCOREDATA
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPSCOREDATAENTRY.containing_type = _DATAMANAGER
+_DATAMANAGER.fields_by_name['crazyPaijiuCardGroupData'].message_type = _DATAMANAGER_CRAZYPAIJIUCARDGROUPDATAENTRY
+_DATAMANAGER.fields_by_name['crazyPaijiuCardGroupScoreData'].message_type = _DATAMANAGER_CRAZYPAIJIUCARDGROUPSCOREDATAENTRY
+_DATAMANAGER.fields_by_name['laotiePaijiuCardGroupData'].message_type = _DATAMANAGER_LAOTIEPAIJIUCARDGROUPDATAENTRY
+_DATAMANAGER.fields_by_name['laotiePaijiuCardGroupScoreData'].message_type = _DATAMANAGER_LAOTIEPAIJIUCARDGROUPSCOREDATAENTRY
 _DATAMANAGER.fields_by_name['paijiuCardData'].message_type = _DATAMANAGER_PAIJIUCARDDATAENTRY
 _DATAMANAGER.fields_by_name['paijiuCardGroupData'].message_type = _DATAMANAGER_PAIJIUCARDGROUPDATAENTRY
 _DATAMANAGER.fields_by_name['paijiuCardGroupScoreData'].message_type = _DATAMANAGER_PAIJIUCARDGROUPSCOREDATAENTRY
 _DATAMANAGER.fields_by_name['roomData'].message_type = _DATAMANAGER_ROOMDATAENTRY
 _DATAMANAGER.fields_by_name['testData'].message_type = _DATAMANAGER_TESTDATAENTRY
+_DATAMANAGER.fields_by_name['xiaoyaoPaijiuCardGroupData'].message_type = _DATAMANAGER_XIAOYAOPAIJIUCARDGROUPDATAENTRY
+_DATAMANAGER.fields_by_name['xiaoyaoPaijiuCardGroupScoreData'].message_type = _DATAMANAGER_XIAOYAOPAIJIUCARDGROUPSCOREDATAENTRY
 _ROOMDATA_MONEYENTRY.containing_type = _ROOMDATA
 _ROOMDATA_EACHMONEYENTRY.containing_type = _ROOMDATA
+_ROOMDATA_ENTERGOLDENTRY.containing_type = _ROOMDATA
+_ROOMDATA_OUTGOLDENTRY.containing_type = _ROOMDATA
 _ROOMDATA.fields_by_name['money'].message_type = _ROOMDATA_MONEYENTRY
 _ROOMDATA.fields_by_name['eachMoney'].message_type = _ROOMDATA_EACHMONEYENTRY
+_ROOMDATA.fields_by_name['enterGold'].message_type = _ROOMDATA_ENTERGOLDENTRY
+_ROOMDATA.fields_by_name['outGold'].message_type = _ROOMDATA_OUTGOLDENTRY
 _TESTDATA_WEAPONENTRY.containing_type = _TESTDATA
 _TESTDATA_TESTMAPDOUBLEENTRY.containing_type = _TESTDATA
 _TESTDATA.fields_by_name['weapon'].message_type = _TESTDATA_WEAPONENTRY
 _TESTDATA.fields_by_name['testMapDouble'].message_type = _TESTDATA_TESTMAPDOUBLEENTRY
 DESCRIPTOR.message_types_by_name['DataManager'] = _DATAMANAGER
+DESCRIPTOR.message_types_by_name['CrazyPaijiuCardGroupData'] = _CRAZYPAIJIUCARDGROUPDATA
+DESCRIPTOR.message_types_by_name['CrazyPaijiuCardGroupScoreData'] = _CRAZYPAIJIUCARDGROUPSCOREDATA
+DESCRIPTOR.message_types_by_name['LaotiePaijiuCardGroupData'] = _LAOTIEPAIJIUCARDGROUPDATA
+DESCRIPTOR.message_types_by_name['LaotiePaijiuCardGroupScoreData'] = _LAOTIEPAIJIUCARDGROUPSCOREDATA
 DESCRIPTOR.message_types_by_name['PaijiuCardData'] = _PAIJIUCARDDATA
 DESCRIPTOR.message_types_by_name['PaijiuCardGroupData'] = _PAIJIUCARDGROUPDATA
 DESCRIPTOR.message_types_by_name['PaijiuCardGroupScoreData'] = _PAIJIUCARDGROUPSCOREDATA
 DESCRIPTOR.message_types_by_name['RoomData'] = _ROOMDATA
 DESCRIPTOR.message_types_by_name['TestData'] = _TESTDATA
+DESCRIPTOR.message_types_by_name['XiaoyaoPaijiuCardGroupData'] = _XIAOYAOPAIJIUCARDGROUPDATA
+DESCRIPTOR.message_types_by_name['XiaoyaoPaijiuCardGroupScoreData'] = _XIAOYAOPAIJIUCARDGROUPSCOREDATA
 
 DataManager = _reflection.GeneratedProtocolMessageType('DataManager', (_message.Message,), dict(
+
+  CrazyPaijiuCardGroupDataEntry = _reflection.GeneratedProtocolMessageType('CrazyPaijiuCardGroupDataEntry', (_message.Message,), dict(
+    DESCRIPTOR = _DATAMANAGER_CRAZYPAIJIUCARDGROUPDATAENTRY,
+    __module__ = 'static_data_proto_pb2'
+    # @@protoc_insertion_point(class_scope:DataManager.CrazyPaijiuCardGroupDataEntry)
+    ))
+  ,
+
+  CrazyPaijiuCardGroupScoreDataEntry = _reflection.GeneratedProtocolMessageType('CrazyPaijiuCardGroupScoreDataEntry', (_message.Message,), dict(
+    DESCRIPTOR = _DATAMANAGER_CRAZYPAIJIUCARDGROUPSCOREDATAENTRY,
+    __module__ = 'static_data_proto_pb2'
+    # @@protoc_insertion_point(class_scope:DataManager.CrazyPaijiuCardGroupScoreDataEntry)
+    ))
+  ,
+
+  LaotiePaijiuCardGroupDataEntry = _reflection.GeneratedProtocolMessageType('LaotiePaijiuCardGroupDataEntry', (_message.Message,), dict(
+    DESCRIPTOR = _DATAMANAGER_LAOTIEPAIJIUCARDGROUPDATAENTRY,
+    __module__ = 'static_data_proto_pb2'
+    # @@protoc_insertion_point(class_scope:DataManager.LaotiePaijiuCardGroupDataEntry)
+    ))
+  ,
+
+  LaotiePaijiuCardGroupScoreDataEntry = _reflection.GeneratedProtocolMessageType('LaotiePaijiuCardGroupScoreDataEntry', (_message.Message,), dict(
+    DESCRIPTOR = _DATAMANAGER_LAOTIEPAIJIUCARDGROUPSCOREDATAENTRY,
+    __module__ = 'static_data_proto_pb2'
+    # @@protoc_insertion_point(class_scope:DataManager.LaotiePaijiuCardGroupScoreDataEntry)
+    ))
+  ,
 
   PaijiuCardDataEntry = _reflection.GeneratedProtocolMessageType('PaijiuCardDataEntry', (_message.Message,), dict(
     DESCRIPTOR = _DATAMANAGER_PAIJIUCARDDATAENTRY,
@@ -743,16 +1407,64 @@ DataManager = _reflection.GeneratedProtocolMessageType('DataManager', (_message.
     # @@protoc_insertion_point(class_scope:DataManager.TestDataEntry)
     ))
   ,
+
+  XiaoyaoPaijiuCardGroupDataEntry = _reflection.GeneratedProtocolMessageType('XiaoyaoPaijiuCardGroupDataEntry', (_message.Message,), dict(
+    DESCRIPTOR = _DATAMANAGER_XIAOYAOPAIJIUCARDGROUPDATAENTRY,
+    __module__ = 'static_data_proto_pb2'
+    # @@protoc_insertion_point(class_scope:DataManager.XiaoyaoPaijiuCardGroupDataEntry)
+    ))
+  ,
+
+  XiaoyaoPaijiuCardGroupScoreDataEntry = _reflection.GeneratedProtocolMessageType('XiaoyaoPaijiuCardGroupScoreDataEntry', (_message.Message,), dict(
+    DESCRIPTOR = _DATAMANAGER_XIAOYAOPAIJIUCARDGROUPSCOREDATAENTRY,
+    __module__ = 'static_data_proto_pb2'
+    # @@protoc_insertion_point(class_scope:DataManager.XiaoyaoPaijiuCardGroupScoreDataEntry)
+    ))
+  ,
   DESCRIPTOR = _DATAMANAGER,
   __module__ = 'static_data_proto_pb2'
   # @@protoc_insertion_point(class_scope:DataManager)
   ))
 _sym_db.RegisterMessage(DataManager)
+_sym_db.RegisterMessage(DataManager.CrazyPaijiuCardGroupDataEntry)
+_sym_db.RegisterMessage(DataManager.CrazyPaijiuCardGroupScoreDataEntry)
+_sym_db.RegisterMessage(DataManager.LaotiePaijiuCardGroupDataEntry)
+_sym_db.RegisterMessage(DataManager.LaotiePaijiuCardGroupScoreDataEntry)
 _sym_db.RegisterMessage(DataManager.PaijiuCardDataEntry)
 _sym_db.RegisterMessage(DataManager.PaijiuCardGroupDataEntry)
 _sym_db.RegisterMessage(DataManager.PaijiuCardGroupScoreDataEntry)
 _sym_db.RegisterMessage(DataManager.RoomDataEntry)
 _sym_db.RegisterMessage(DataManager.TestDataEntry)
+_sym_db.RegisterMessage(DataManager.XiaoyaoPaijiuCardGroupDataEntry)
+_sym_db.RegisterMessage(DataManager.XiaoyaoPaijiuCardGroupScoreDataEntry)
+
+CrazyPaijiuCardGroupData = _reflection.GeneratedProtocolMessageType('CrazyPaijiuCardGroupData', (_message.Message,), dict(
+  DESCRIPTOR = _CRAZYPAIJIUCARDGROUPDATA,
+  __module__ = 'static_data_proto_pb2'
+  # @@protoc_insertion_point(class_scope:CrazyPaijiuCardGroupData)
+  ))
+_sym_db.RegisterMessage(CrazyPaijiuCardGroupData)
+
+CrazyPaijiuCardGroupScoreData = _reflection.GeneratedProtocolMessageType('CrazyPaijiuCardGroupScoreData', (_message.Message,), dict(
+  DESCRIPTOR = _CRAZYPAIJIUCARDGROUPSCOREDATA,
+  __module__ = 'static_data_proto_pb2'
+  # @@protoc_insertion_point(class_scope:CrazyPaijiuCardGroupScoreData)
+  ))
+_sym_db.RegisterMessage(CrazyPaijiuCardGroupScoreData)
+
+LaotiePaijiuCardGroupData = _reflection.GeneratedProtocolMessageType('LaotiePaijiuCardGroupData', (_message.Message,), dict(
+  DESCRIPTOR = _LAOTIEPAIJIUCARDGROUPDATA,
+  __module__ = 'static_data_proto_pb2'
+  # @@protoc_insertion_point(class_scope:LaotiePaijiuCardGroupData)
+  ))
+_sym_db.RegisterMessage(LaotiePaijiuCardGroupData)
+
+LaotiePaijiuCardGroupScoreData = _reflection.GeneratedProtocolMessageType('LaotiePaijiuCardGroupScoreData', (_message.Message,), dict(
+  DESCRIPTOR = _LAOTIEPAIJIUCARDGROUPSCOREDATA,
+  __module__ = 'static_data_proto_pb2'
+  # @@protoc_insertion_point(class_scope:LaotiePaijiuCardGroupScoreData)
+  ))
+_sym_db.RegisterMessage(LaotiePaijiuCardGroupScoreData)
 
 PaijiuCardData = _reflection.GeneratedProtocolMessageType('PaijiuCardData', (_message.Message,), dict(
   DESCRIPTOR = _PAIJIUCARDDATA,
@@ -790,6 +1502,20 @@ RoomData = _reflection.GeneratedProtocolMessageType('RoomData', (_message.Messag
     # @@protoc_insertion_point(class_scope:RoomData.EachMoneyEntry)
     ))
   ,
+
+  EnterGoldEntry = _reflection.GeneratedProtocolMessageType('EnterGoldEntry', (_message.Message,), dict(
+    DESCRIPTOR = _ROOMDATA_ENTERGOLDENTRY,
+    __module__ = 'static_data_proto_pb2'
+    # @@protoc_insertion_point(class_scope:RoomData.EnterGoldEntry)
+    ))
+  ,
+
+  OutGoldEntry = _reflection.GeneratedProtocolMessageType('OutGoldEntry', (_message.Message,), dict(
+    DESCRIPTOR = _ROOMDATA_OUTGOLDENTRY,
+    __module__ = 'static_data_proto_pb2'
+    # @@protoc_insertion_point(class_scope:RoomData.OutGoldEntry)
+    ))
+  ,
   DESCRIPTOR = _ROOMDATA,
   __module__ = 'static_data_proto_pb2'
   # @@protoc_insertion_point(class_scope:RoomData)
@@ -797,6 +1523,8 @@ RoomData = _reflection.GeneratedProtocolMessageType('RoomData', (_message.Messag
 _sym_db.RegisterMessage(RoomData)
 _sym_db.RegisterMessage(RoomData.MoneyEntry)
 _sym_db.RegisterMessage(RoomData.EachMoneyEntry)
+_sym_db.RegisterMessage(RoomData.EnterGoldEntry)
+_sym_db.RegisterMessage(RoomData.OutGoldEntry)
 
 TestData = _reflection.GeneratedProtocolMessageType('TestData', (_message.Message,), dict(
 
@@ -821,9 +1549,31 @@ _sym_db.RegisterMessage(TestData)
 _sym_db.RegisterMessage(TestData.WeaponEntry)
 _sym_db.RegisterMessage(TestData.TestMapDoubleEntry)
 
+XiaoyaoPaijiuCardGroupData = _reflection.GeneratedProtocolMessageType('XiaoyaoPaijiuCardGroupData', (_message.Message,), dict(
+  DESCRIPTOR = _XIAOYAOPAIJIUCARDGROUPDATA,
+  __module__ = 'static_data_proto_pb2'
+  # @@protoc_insertion_point(class_scope:XiaoyaoPaijiuCardGroupData)
+  ))
+_sym_db.RegisterMessage(XiaoyaoPaijiuCardGroupData)
+
+XiaoyaoPaijiuCardGroupScoreData = _reflection.GeneratedProtocolMessageType('XiaoyaoPaijiuCardGroupScoreData', (_message.Message,), dict(
+  DESCRIPTOR = _XIAOYAOPAIJIUCARDGROUPSCOREDATA,
+  __module__ = 'static_data_proto_pb2'
+  # @@protoc_insertion_point(class_scope:XiaoyaoPaijiuCardGroupScoreData)
+  ))
+_sym_db.RegisterMessage(XiaoyaoPaijiuCardGroupScoreData)
+
 
 DESCRIPTOR.has_options = True
 DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\n\035com.code.server.constant.dataB\017StaticDataProto\252\002\014com.bsl.data'))
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPDATAENTRY.has_options = True
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPSCOREDATAENTRY.has_options = True
+_DATAMANAGER_CRAZYPAIJIUCARDGROUPSCOREDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPDATAENTRY.has_options = True
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPSCOREDATAENTRY.has_options = True
+_DATAMANAGER_LAOTIEPAIJIUCARDGROUPSCOREDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
 _DATAMANAGER_PAIJIUCARDDATAENTRY.has_options = True
 _DATAMANAGER_PAIJIUCARDDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
 _DATAMANAGER_PAIJIUCARDGROUPDATAENTRY.has_options = True
@@ -834,10 +1584,18 @@ _DATAMANAGER_ROOMDATAENTRY.has_options = True
 _DATAMANAGER_ROOMDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
 _DATAMANAGER_TESTDATAENTRY.has_options = True
 _DATAMANAGER_TESTDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPDATAENTRY.has_options = True
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPSCOREDATAENTRY.has_options = True
+_DATAMANAGER_XIAOYAOPAIJIUCARDGROUPSCOREDATAENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
 _ROOMDATA_MONEYENTRY.has_options = True
 _ROOMDATA_MONEYENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
 _ROOMDATA_EACHMONEYENTRY.has_options = True
 _ROOMDATA_EACHMONEYENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
+_ROOMDATA_ENTERGOLDENTRY.has_options = True
+_ROOMDATA_ENTERGOLDENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
+_ROOMDATA_OUTGOLDENTRY.has_options = True
+_ROOMDATA_OUTGOLDENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
 _TESTDATA_WEAPONENTRY.has_options = True
 _TESTDATA_WEAPONENTRY._options = _descriptor._ParseOptions(descriptor_pb2.MessageOptions(), _b('8\001'))
 _TESTDATA_TESTMAPDOUBLEENTRY.has_options = True
